@@ -140,7 +140,7 @@ body > #docsContainer__ {
 	clear: left;
 	margin: 0 auto;
 	max-width: 1259px;
-	min-width: 640px;
+	min-width: 600px;
 	min-height: 900px;
 	background-color: #fff;
 	padding: 0;
@@ -415,7 +415,7 @@ article .depricated {
 article ul.contents {
 	position: absolute;
 	margin-left: -233px;
-	top: 303px;
+	top: 214px;
 	background-color: #fff;
 	padding: 5px 0px 10px 10px;
 	border-radius: 10px 0 0 10px;

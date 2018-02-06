@@ -196,7 +196,7 @@
 
 			    	var navHeight = N(".header nav").outerHeight();
 					N(window).unbind("scroll.aop").bind("scroll.aop", function(e) {
-						if(N(this).scrollTop() > 303 - navHeight) {
+						if(N(this).scrollTop() > 214 - navHeight) {
 							contents.css({
 								"position" : "fixed",
 								"top" : navHeight
@@ -204,7 +204,7 @@
 						} else {
 							contents.css({
 								"position" : "absolute",
-								"top" : 303
+								"top" : 214
 							});
 						}
 					});
