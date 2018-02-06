@@ -1,21 +1,21 @@
 <style>
 .header {
-	min-width: 560px;
-	margin-bottom: 41px;
+	min-width: 640px;
+	margin-bottom: 48px;
 }
 
 .header .hgroup-back {
 	width: 100%;
-	height: 82px;
-	background-color: #004D40;
-	opacity: 0.90;
+    height: 130px;
+    background: linear-gradient(141deg, #E0F2F1 0%, #00897B 70%, #4DB6AC 90%);
+    background-color: #009688;
+    opacity: 0.92;
 }
 
 .header .hgroup {
 	margin: 0 auto;
 	max-width: 1259px;
-	min-width: 560px;
-	padding: 0 9px 0px 9px;
+	min-width: 640px;
 }
 
 .header .hgroup h1, .header .hgroup h2 {
@@ -24,49 +24,67 @@
 }
 
 .header .hgroup #logo {
-	margin: 6px 0 0 3px;
+	margin: 10px 0 0 10px;
+	height: 110px;
 }
 
-.header .hgroup #desc {
-    font-size: 1.15em;
+.header .hgroup .righter {
+	float: right;
+	text-align: right;
+	padding: 10px;
+}
+
+.header .hgroup .righter #i18nButtons {
+	font-size: 1.6rem;
+	color : #fff;
+	margin-bottom: 50px;
+}
+
+.header .hgroup #i18nButtons a {
+	color : #fff;
+	text-shadow: 1px 1px 2px #000000;
+}
+
+.header .hgroup .righter #desc {
+    font-size: 2.4rem;
+    letter-spacing: -0.134rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.87);
     padding: 0;
-    color : #fff;
-    margin: 53px 3px 0 0;
-    float: right;
+    color: #fff;
 }
 
 .header nav {
 	width: 100%;
-	background-color: #00897B;
-	opacity: 0.9;
-	box-shadow: 0 1px 3px;
-	position: absolute;
-	z-index: 1;
+    background-color: #00695C;
+    opacity: 0.95;
+    box-shadow: 0 1px 3px;
+    position: absolute;
+    z-index: 1;
 }
 
 .header nav>ul {
 	list-style: none;
 	margin: 0 auto;
 	padding: 0;
-	height: 41px;
+	height: 48px;
 	max-width: 1259px;
-	min-width: 560px;
+	min-width: 640px;
 	overflow: hidden;
 }
 
 .header nav>ul>li {
 	margin: 0;
+	box-sizing: border-box;
     padding: 8px 9px 9px 9px;
 	text-align: center;
 	float: left;
-	width: 80px;
+	width: 100px;
 }
 
 .header nav>ul>li>a {
 	color : #fff;
-	font-weight: bold;
-	font-size: 1.6rem;
-	text-shadow: 0 0 2px #00897B;
+	font-size: 2.0rem;
+	text-shadow: 0 0 2px rgba(0, 0, 0, 0.87);
 	opacity: 1;
 }
 
@@ -92,7 +110,7 @@
 
 .header nav>ul>li:hover>a {
 	color : #fff;
-	text-shadow: 0 0 15px #7F7;
+	text-shadow: 0 0 15px #E0F2F1;
 }
 
 .header nav>ul>li:hover>ul {
@@ -104,22 +122,15 @@
 	text-align: left;
 }
 
-.header nav>ul>li>ul>li.nav-saction {
-	padding: 0;
-	color : #fff;
-	font-size: 14px;
-	text-shadow: -1px -1px #005000;
-}
-
 .header nav>ul>li>ul>li a {
 	color : #fff;
-	font-size: 0.9em;
-	text-shadow: 1px 1px 1px #000;
+	font-size: 1.6rem;
+	text-shadow: 1px 1px 2px #000;
 	opacity: 1;
 }
 
 .header nav>ul>li>ul>li a:hover {
-	text-shadow: 0 0 10px #fff;
+	text-shadow: 0 0 15px #E0F2F1;
 }
 
 @keyframes navFixOff {
@@ -147,30 +158,18 @@
 	animation-name: navFixOn;
 	animation-duration: 0.5s;
 }
-
-.header #i18nButtons {
-	float: right;
-	font-size: 0.8em;
-	color : #fff;
-	text-shadow: 0px 0px 1px #000000;
-	margin-top: 3px;
-	margin-right: -310px;
-}
-
-.header #i18nButtons a {
-	color : #fff;
-	text-shadow: 1px 1px 0px #000000;
-}
 </style>
 <div class="header">
 	<div class="hgroup-back">
 		<div class="hgroup">
 			<h1>
-				<a href="./index.html"><img id="logo" src="images/natural_js.png" height="70" /></a>
+				<a href="./index.html"><img id="logo" src="images/natural_js.png"></a>
 			</h1>
-			<h2 id="desc">Javascript UI Architecture Framework</h2>
-			<div id="i18nButtons">
-				<a id="korean" href="#" class="link">한국어</a> | <a id="english" href="#" class="link">English</a>
+			<div class="righter">
+				<div id="i18nButtons">
+					<a id="korean" href="#" class="link">한국어</a> | <a id="english" href="#" class="link">English</a>
+				</div>
+				<h2 id="desc">Javascript UI Architecture Framework</h2>
 			</div>
 		</div>
 	</div>
@@ -183,7 +182,7 @@
 					<li><a href="html/intr/intr0100.html" lang="ko_KR">Natural-JS 소개</a></li>
 				</ul>
 			</li>
-			<li lang="en_US" style="padding-left: 0; padding-right: 0; width: 110px;"><a href="#">Introduction</a>
+			<li lang="en_US"><a href="#">Introduction</a>
 				<ul>
 					<li><a href="html/intr/intr0100.html" lang="en_US">About Natural-JS</a></li>
 				</ul>
@@ -198,7 +197,7 @@
 					<li><a href="html/gtst/gtst0100.html" lang="en_US">Getting Started with Natural-JS</a></li>
 				</ul>
 			</li>
-			<li style="padding-left: 0; padding-right: 0; width: 110px;">
+			<li>
 				<a	href="#" lang="ko_KR">API/DEMO<br></a> <a href="#" lang="en_US">API/DEMO<br></a>
 				<ul>
 					<li><a href="html/refr/refr0101.html" lang="ko_KR">API 문서
