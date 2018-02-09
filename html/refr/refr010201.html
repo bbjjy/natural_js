@@ -18,7 +18,7 @@
 	jQuery 의 $와 같은 역할을 수행하며 Natural-JS 의 N() 처럼 N 함수로 초기화하고 이후 실행되는 메서드들은 jQuery 의 $ 함수 로 실행해도 됩니다.
 	반대로 jQuery 의 기능들은 모두 N() 에 상속되어 있으므로 jQuery 메서드를 호출할 때 $() 대신 N()을 사용해도 됩니다.
 	</p>
-	<p class="alert">단, 아래의 N 오브젝트(N.)로 서비스 되는 함수들은 $ 오브젝트($.) 로 사용이 불 가능 합니다.</p>
+	<p class="note">단, 아래의 N 오브젝트(N.)로 서비스 되는 함수들은 $ 오브젝트($.) 로 사용이 불 가능 합니다.</p>
 
 	<h3>
 		<span lang="ko_KR">jQuery selector 확장</span>
@@ -128,7 +128,7 @@ N("div:regexp(id, page-[0-9])")</code></pre>
 		<span lang="en_US">Methods</span>
 	</h3>
 	<p>Natural-CORE 에서 제공되는 내부 함수들은 아래와 같습니다.</p>
-	<p class="alert">Natural-CORE 함수들의 대부분은 Natural-JS 개발을 위해 제작 된 유틸리티 함수 들 입니다.</p>
+	<p class="note">Natural-CORE 함수들의 대부분은 Natural-JS 개발을 위해 제작 된 유틸리티 함수 들 입니다.</p>
 
 	<h4>
 		<span lang="ko_KR">jQuery plugin 확장 함수</span>
@@ -178,7 +178,7 @@ var all = N("div#sample1", "div#sample2")
 });</code></pre>
 				<pre><code class="language-javascript">// 조회한 요소에 instanceId 가 "name" 으로 instance 를 저장 합니다.
 N("div#sample1").instance("name", instance);</code></pre>
-				<p class="alert">인스턴스 저장 시 instance 인자가 function 타입이면 정상작동 하지 않을 수 있습니다. function 타입을 제외한 object 나 string 과 같은 타입을 instance 인자로 지정하기 바랍니다.</p>
+				<p class="note">인스턴스 저장 시 instance 인자가 function 타입이면 정상작동 하지 않을 수 있습니다. function 타입을 제외한 object 나 string 과 같은 타입을 instance 인자로 지정하기 바랍니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -195,7 +195,7 @@ N("div#sample1").instance("name", instance);</code></pre>
 			<td align="center">-</td>
 			<td>
 				<p>인스턴스나 인스턴스를 가져올 callback</p>
-				<p class="alert">callback의 인자는 index(arguments[0])와 각각의 instance(arguments[1])가 들어옵니다. 이 callback 안의 this 는 각각의 instance를 가리킵니다.</p>
+				<p class="note">callback의 인자는 index(arguments[0])와 각각의 instance(arguments[1])가 들어옵니다. 이 callback 안의 this 는 각각의 instance를 가리킵니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -280,8 +280,8 @@ N("div#sample1").instance("name", instance);</code></pre>
 			<td>object similar to array|array|undefined</td>
 			<td>
 				<p>셀렉터로 지정한 요소에 바인드 되어 있는 이벤트들을 반환 합니다.</p>
-				<p class="alert">eventName 인자와 namespace 인자를 둘다 입력 하지 않으면 모든 이벤트들을 반환하고 namespace 를 입력 하지 않으면 지정한 eventName 에 해당하는 이벤트들만 반환 합니다.</p>
-				<p class="alert">namespace 인자가 입력 되면 array 타입으로 이벤트를 반환 하고 그렇지 않은 경우에는 array 와 비슷한 object 타입으로 이벤트들을 반환 합니다. 바인드되어 있는 이벤트가 없으면 undefined 를 반환 합니다.</p>
+				<p class="note">eventName 인자와 namespace 인자를 둘다 입력 하지 않으면 모든 이벤트들을 반환하고 namespace 를 입력 하지 않으면 지정한 eventName 에 해당하는 이벤트들만 반환 합니다.</p>
+				<p class="note">namespace 인자가 입력 되면 array 타입으로 이벤트를 반환 하고 그렇지 않은 경우에는 array 와 비슷한 object 타입으로 이벤트들을 반환 합니다. 바인드되어 있는 이벤트가 없으면 undefined 를 반환 합니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -374,8 +374,8 @@ N("div#sample1").instance("name", instance);</code></pre>
 			<td>undefined</td>
 			<td>
 				<p>콘솔창에 로깅(Logging) 메시지를 보여 줍니다</p>
-				<p class="alert">console.log 를 Wrapping 한 함수로서 console.log 와 사용법이 동일 합니다.</p>
-				<p class="alert">브라우저에서 console.log를 지원하지 않으면 메시지가 표시되지 않습니다.</p>
+				<p class="note">console.log 를 Wrapping 한 함수로서 console.log 와 사용법이 동일 합니다.</p>
+				<p class="note">브라우저에서 console.log를 지원하지 않으면 메시지가 표시되지 않습니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -394,8 +394,8 @@ N("div#sample1").instance("name", instance);</code></pre>
 			<td>undefined</td>
 			<td>
 				<p>콘솔창에 Warnning 메시지를 보여 줍니다</p>
-				<p class="alert">console.info 를 Wrapping 한 함수로서 console.log 와 사용법이 동일 합니다.</p>
-				<p class="alert">브라우저에서 console.info을 지원하지 않으면 메시지가 표시되지 않습니다.</p>
+				<p class="note">console.info 를 Wrapping 한 함수로서 console.log 와 사용법이 동일 합니다.</p>
+				<p class="note">브라우저에서 console.info을 지원하지 않으면 메시지가 표시되지 않습니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -414,8 +414,8 @@ N("div#sample1").instance("name", instance);</code></pre>
 			<td>undefined</td>
 			<td>
 				<p>콘솔창에 Warnning 메시지를 보여 줍니다</p>
-				<p class="alert">console.warn 를 Wrapping 한 함수로서 console.log 와 사용법이 동일 합니다.</p>
-				<p class="alert">브라우저에서 console.warn을 지원하지 않으면 메시지가 표시되지 않습니다.</p>
+				<p class="note">console.warn 를 Wrapping 한 함수로서 console.log 와 사용법이 동일 합니다.</p>
+				<p class="note">브라우저에서 console.warn을 지원하지 않으면 메시지가 표시되지 않습니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -434,7 +434,7 @@ N("div#sample1").instance("name", instance);</code></pre>
 			<td>ErrorThrown</td>
 			<td>
 				<p>에러를 발생 시키고 에러 메시지를 브라우저 콘솔창에 보여줍니다.</p>
-				<p class="alert">N.error 함수는 ErrorThrown 객체를 반환하기 때문에 함수 앞에 throw 구문을 선언을 해야 에러가 발생 합니다.</p>
+				<p class="note">N.error 함수는 ErrorThrown 객체를 반환하기 때문에 함수 앞에 throw 구문을 선언을 해야 에러가 발생 합니다.</p>
 				<pre class="line-numbers"><code class="language-javascript">
 throw N.error("오류가 발생 했습니다.");</code></pre>
 			</td>
@@ -488,7 +488,7 @@ throw N.error("오류가 발생 했습니다.");</code></pre>
 			<td>boolean</td>
 			<td>
 				<p>입력한 객체가 숫자 타입인지 검사 합니다.</p>
-				<p class="alert">N.isNumeric 은 jQuery 의 $.isNumeric 함수를 그대로 사용 합니다.</p>
+				<p class="note">N.isNumeric 은 jQuery 의 $.isNumeric 함수를 그대로 사용 합니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -505,11 +505,11 @@ throw N.error("오류가 발생 했습니다.");</code></pre>
 			<td>boolean</td>
 			<td>
 				<p>입력한 객체가 순수한 객체 타입인지 검사 합니다.</p>
-				<p class="alert">
+				<p class="note">
 					typeof N() 나 N.type(N()) 을 실행하면 "object" 로 반환 되지만 N.isPlainObject 이러한 오브젝트를 순수한 오브젝트로 평가 하지 않습니다.
 					new Object() 나 객체 생성 리터럴({})로 생성한 오브젝트만 true 가 반환 됩니다.
 				</p>
-				<p class="alert">N.isPlainObject 은 jQuery 의 $.isPlainObject 함수를 그대로 사용 합니다.</p>
+				<p class="note">N.isPlainObject 은 jQuery 의 $.isPlainObject 함수를 그대로 사용 합니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -526,7 +526,7 @@ throw N.error("오류가 발생 했습니다.");</code></pre>
 			<td>boolean</td>
 			<td>
 				<p>입력한 객체가 비어 있는 객체인지 검사 합니다.</p>
-				<p class="alert">
+				<p class="note">
 					"" 나 {}, [] 는 모두 비어 있는 객체여서 true를 반환 하지만 [{}] 안에 있는 객체가 비어 있으므로 false 가 반환 됩니다.
 				</p>
 			</td>
@@ -545,7 +545,7 @@ throw N.error("오류가 발생 했습니다.");</code></pre>
 			<td>boolean</td>
 			<td>
 				<p>입력한 객체가 array 타입인지 검사 합니다.</p>
-				<p class="alert">N.isArray 은 jQuery 의 $.isArray 함수를 그대로 사용 합니다.</p>
+				<p class="note">N.isArray 은 jQuery 의 $.isArray 함수를 그대로 사용 합니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -562,7 +562,7 @@ throw N.error("오류가 발생 했습니다.");</code></pre>
 			<td>boolean</td>
 			<td>
 				<p>입력한 객체가 array 와 비슷한 타입인지 검사 합니다.</p>
-				<p class="alert">jquery object 도 겉 보기에는 array 와 유사하여 true 를 반환 합니다. array, jquery object 를 둘다 같은 오브젝트로 평가하고 싶을 때 사용 하세요.</p>
+				<p class="note">jquery object 도 겉 보기에는 array 와 유사하여 true 를 반환 합니다. array, jquery object 를 둘다 같은 오브젝트로 평가하고 싶을 때 사용 하세요.</p>
 			</td>
 		</tr>
 		<tr>
@@ -700,7 +700,7 @@ $.when.apply($, defers).done(function(arg0, agr1, arg2, agr3) {
 			<td>object</td>
 			<td>
 				<p>Natural-JS 의 컴포넌트와 라이브러리에서 사용되는(하는) 요소와 이벤트에 대한 최소한의 자원을 회수합니다.</p>
-				<p class="alert">natural.config.js 에서 설정한 page context(N.context.attr("architecture").page.context) 영역에 N.comm로 페이지를 불러올경우 N.gc.minimum() 이 자동으로 호출 됩니다.</p>
+				<p class="note">natural.config.js 에서 설정한 page context(N.context.attr("architecture").page.context) 영역에 N.comm로 페이지를 불러올경우 N.gc.minimum() 이 자동으로 호출 됩니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -908,7 +908,7 @@ $.when.apply($, defers).done(function(arg0, agr1, arg2, agr3) {
 			<td>string</td>
 			<td>
 				<p>문자열이 입력 되면 입력한 문자열의 앞 뒤 공백을 제거 하고 null 이나 undefined 가 입력 되면 비어있는 문자("")를 반환 합니다</p>
-				<p class="alert">N.string.trim 은 jQuery 의 $.trim 함수를 그대로 사용 합니다.</p>
+				<p class="note">N.string.trim 은 jQuery 의 $.trim 함수를 그대로 사용 합니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -925,7 +925,7 @@ $.when.apply($, defers).done(function(arg0, agr1, arg2, agr3) {
 			<td>string</td>
 			<td>
 				<p>입력한 문자열이 비어 있는지 검사 합니다.</p>
-				<p class="alert">"" 뿐만아니라 " ", null, undefined 도 true 를 반환 합니다.</p>
+				<p class="note">"" 뿐만아니라 " ", null, undefined 도 true 를 반환 합니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -942,7 +942,7 @@ $.when.apply($, defers).done(function(arg0, agr1, arg2, agr3) {
 			<td>string</td>
 			<td>
 				<p>입력한 문자열의 byte 길이를 반환 합니다.</p>
-				<p class="alert">binary 에서 산출 된 정확한 byte 길이 값이 아닙니다. 단순하게 UTF-8 한글 문자를 3 바이트로 계산하고 영문, 숫자, 특수문자 등은 1 바이트로 계산 됩니다.</p>
+				<p class="note">binary 에서 산출 된 정확한 byte 길이 값이 아닙니다. 단순하게 UTF-8 한글 문자를 3 바이트로 계산하고 영문, 숫자, 특수문자 등은 1 바이트로 계산 됩니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -959,7 +959,7 @@ $.when.apply($, defers).done(function(arg0, agr1, arg2, agr3) {
 			<td>string</td>
 			<td>
 				<p>입력한 문자의 byte 길이를 반환 합니다.</p>
-				<p class="alert">binary 에서 산출 된 정확한 byte 길이 값이 아닙니다. 단순하게 UTF-8 한글 문자를 3 바이트로 계산하고 영문, 숫자, 특수문자 등은 1 바이트로 계산 됩니다.</p>
+				<p class="note">binary 에서 산출 된 정확한 byte 길이 값이 아닙니다. 단순하게 UTF-8 한글 문자를 3 바이트로 계산하고 영문, 숫자, 특수문자 등은 1 바이트로 계산 됩니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -976,7 +976,7 @@ $.when.apply($, defers).done(function(arg0, agr1, arg2, agr3) {
 			<td>string</td>
 			<td>
 				<p>문자열이 입력 되면 입력한 문자열의 앞 뒤 공백을 제거 하고 null 이나 undefined 가 입력 되면 비어있는 문자("")를 반환 합니다</p>
-				<p class="alert">N.string.trimToEmpty 은 jQuery 의 $.trim 함수를 그대로 사용 합니다.</p>
+				<p class="note">N.string.trimToEmpty 은 jQuery 의 $.trim 함수를 그대로 사용 합니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -1079,7 +1079,7 @@ $.when.apply($, defers).done(function(arg0, agr1, arg2, agr3) {
 			<td>boolean</td>
 			<td>
 				<p>인자로 입력한 입력 요소들의 id 와 value 속성 값으로 JSON 오브젝트를 생성 합니다.</p>
-				<p class="alert">N.form 에서 add 메서드 호출 시 초기 데이터를 생성 할 때 사용 합니다.</p>
+				<p class="note">N.form 에서 add 메서드 호출 시 초기 데이터를 생성 할 때 사용 합니다.</p>
 				<pre><code class="language-javascript">// #box 의 입력요소의 값을 json 데이터로 변환
 var data = N.element.toData($("#box").find(":input"));</code></pre>
 			</td>
@@ -1108,7 +1108,7 @@ var data = N.element.toData($("#box").find(":input"));</code></pre>
 			<td align="center">-</td>
 			<td>
 				<p>대상 요소</p>
-				<p class="alert">입력하지 않으면 $("div, span, ul, p, nav, article, section") 로 작동 합니다.</p>
+				<p class="note">입력하지 않으면 $("div, span, ul, p, nav, article, section") 로 작동 합니다.</p>
 			</td>
 		</tr>
 	</table>
@@ -1237,7 +1237,7 @@ var data = N.element.toData($("#box").find(":input"));</code></pre>
 					<li>예) "12311999" : "mdY"</li>
 					<li>예) "19991231120159" : "YmdHis"</li>
 				</ul>
-				<p class="alert">format 인자를 입력하지 않으면 입력한 날짜 문자열의 길이에 따라 다음과 같이 자동으로 설정 됩니다.</p>
+				<p class="note">format 인자를 입력하지 않으면 입력한 날짜 문자열의 길이에 따라 다음과 같이 자동으로 설정 됩니다.</p>
 				<ul>
 					<li>4자리 : "Y"</li>
 					<li>6자리 : "Y-m"</li>
@@ -1246,7 +1246,7 @@ var data = N.element.toData($("#box").find(":input"));</code></pre>
 					<li>12자리 : "Y-m-d H:i"</li>
 					<li>14자리 : "Y-m-d H:i:s"</li>
 				</ul>
-				<p class="alert">대쉬(-), 콜론(:) 등의 날짜와 시간을 구분하는 문자는 Config(N.config, natural.config.js 파일) 의 N.context.attr("data").formatter.date 오브젝트의 함수들로 정의 되어 있습니다. 날짜/시간 구분 문자는 해당 위치에서 변경 가능 합니다.</p>
+				<p class="note">대쉬(-), 콜론(:) 등의 날짜와 시간을 구분하는 문자는 Config(N.config, natural.config.js 파일) 의 N.context.attr("data").formatter.date 오브젝트의 함수들로 정의 되어 있습니다. 날짜/시간 구분 문자는 해당 위치에서 변경 가능 합니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -1284,7 +1284,7 @@ var data = N.element.toData($("#box").find(":input"));</code></pre>
 					<li>예) N.date.format("19991231120159", "Y.m.d H:i") -> "1999.12.31 12:01"</li>
 					<li>
 						예) N.date.format("19991231120159", N.context.attr("data").formatter.date.YmdHis()) -> "1999-12-31 12:01:59"
-						<p class="alert">N.context.attr("data").formatter.date 오브젝트는 Config(N.config, natural.config.js 파일) 에 정의 되어 있습니다. 날짜/시간 구분 문자는 해당 위치에서 변경 가능 합니다.</p>
+						<p class="note">N.context.attr("data").formatter.date 오브젝트는 Config(N.config, natural.config.js 파일) 에 정의 되어 있습니다. 날짜/시간 구분 문자는 해당 위치에서 변경 가능 합니다.</p>
 					</li>
 				</ul>
 			</td>
@@ -1549,7 +1549,7 @@ var msg = N.message.get(message, "key", [" 입니다"]);</code></pre>
 				<p>json object 가 담겨 있는 array 두개를 병합 합니다.</p>
 				<p>arr1 인자를 기준으로 arr2 를 병합 하고 중복되는 요소가 있으면 해당 요소는 병합하지 않습니다.</p>
 				<p>세번째 인자로 오브젝트의 프로퍼티명을 지정 하면 해당 프로퍼티를 기준으로 중복된 값이 있다면 해당 오브젝트는 병합 하지 않습니다.</p>
-				<p class="alert">병합할 때 원본 데이터를 확장하는 개념이어서 원본 데이터의 메모리 참조는 변경 되지 않고 유지 됩니다.</p>
+				<p class="note">병합할 때 원본 데이터를 확장하는 개념이어서 원본 데이터의 메모리 참조는 변경 되지 않고 유지 됩니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -1616,8 +1616,8 @@ var msg = N.message.get(message, "key", [" 입니다"]);</code></pre>
 			<td>boolean</td>
 			<td>
 				<p>눌러진 키가 숫자와 관련된 키들인지 여부를 리턴</p>
-				<p class="alert">내부적으로 DatePicker 에서 숫자 관련 키들을 제외한 입력을 차단할 때 사용 합니다.</p>
-				<p class="alert">숫자 키 외에 다음과 같은 키들을 인식 합니다.<br>
+				<p class="note">내부적으로 DatePicker 에서 숫자 관련 키들을 제외한 입력을 차단할 때 사용 합니다.</p>
+				<p class="note">숫자 키 외에 다음과 같은 키들을 인식 합니다.<br>
 					97 : a Ctrl + a Select All<br>
 				    65 : A Ctrl + A Select All<br>
 			        99 : c Ctrl + c Copy<br>

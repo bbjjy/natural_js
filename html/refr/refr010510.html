@@ -11,8 +11,8 @@
 	<p>Tree(이하 N.tree)는 계층 구조의 데이터를 트리 타입으로 표현 해 주는 컴포넌트입니다.</p>
 
 	<h3>API DEMO</h3>
-	<p lang="ko_KR" class="alert">데모에는 모든 옵션 및 기능을 포함하고 있지 않습니다. 전체 기능 목록은 데모 바로 아래 있는 기능 문서들을 참고 바랍니다.</p>
-	<p lang="en_US" class="alert">The demo does not include all options and features. For a complete list of features, please refer to the function documentation directly below the demo.</p>
+	<p lang="ko_KR" class="note">데모에는 모든 옵션 및 기능을 포함하고 있지 않습니다. 전체 기능 목록은 데모 바로 아래 있는 기능 문서들을 참고 바랍니다.</p>
+	<p lang="en_US" class="note">The demo does not include all options and features. For a complete list of features, please refer to the function documentation directly below the demo.</p>
 	<div data-page="tree" class="apidemo"></div>
 
 	<h3>
@@ -114,7 +114,7 @@
 			<td align="center"></td>
 			<td>
 				노드 레벨로 표현될 데이터의 컬럼명(key)을 지정 합니다.
-				<p class="alert">데이터 자체에 LEVEL정보를 가지고 있다면 level정보를 갖고 있는 컬럼(key)명 지정 시 트리 렌더링 속도가 더 빨라집니다.</p>
+				<p class="note">데이터 자체에 LEVEL정보를 가지고 있다면 level정보를 갖고 있는 컬럼(key)명 지정 시 트리 렌더링 속도가 더 빨라집니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -131,7 +131,7 @@
 			<td align="center"></td>
 			<td>
 				폴더 노드 선택 여부
-				<p class="alert">true 이면 [+] 아이콘을 클릭하여 폴더를 확장할 수 있고 노드명을 클릭하면 선택(onSelect 이벤트 실행)이 됩니다. false 이면 폴더노드명을 클릭하면 폴더가 확장되고 선택이 되지 않습니다.</p>
+				<p class="note">true 이면 [+] 아이콘을 클릭하여 폴더를 확장할 수 있고 노드명을 클릭하면 선택(onSelect 이벤트 실행)이 됩니다. false 이면 폴더노드명을 클릭하면 폴더가 확장되고 선택이 되지 않습니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -205,7 +205,7 @@
 			<td align="center">-</td>
 			<td>
 				반환되는 데이터의 타입을 결정하거나 데이터를 필터링 하기 위한 구분자 입니다.
-				<div class="alert">
+				<div class="note">
 					<p>selFlag 인자 값에 따라 다음과 같은 타입의 데이터를 반환 합니다.</p>
 					<ul>
 						<li>입력하지 않았거나 undefined : array[json object] 타입의 데이터를 반환 합니다.</li>
@@ -258,7 +258,7 @@ treeInstance.data("modified", "col01", "col02", "col03");
  	col03 : ""
 }]
 */</code></pre>
-				<p class="alert">첫번째 인자로 "checked", "checkedInLastNode" 를 지정 했을 때만 작동 됩니다.</p>
+				<p class="note">첫번째 인자로 "checked", "checkedInLastNode" 를 지정 했을 때만 작동 됩니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -317,7 +317,7 @@ treeInstance.data("modified", "col01", "col02", "col03");
 		<span lang="en_US">Examples</span>
 	</h3>
 
-	<p class="alert">예제 데이터</p>
+	<p class="note">예제 데이터</p>
 	<pre class="line-numbers"><code class="language-markup"><xmp>
 var data = [
 	{
@@ -398,7 +398,7 @@ var data = [
 	}
 ]</xmp></code></pre>
 
-<p class="alert">key, val, level, parent 옵션은 N.config(natural.config.js) 에 다음과 같이 전역옵션으로 설정하면 N(data).tree("#eyeColor").bind(); 와 같이 간편하게 사용할 수 있습니다. 다음 예제들은 N.config에 다음과 같이 설정되어 있다는 가정하에 구동되는 예제 입니다. 그렇지 않다면 컴포넌트 초기화 시 key, val, level, parent 옵션을 지정 해야 합니다.</p>
+<p class="note">key, val, level, parent 옵션은 N.config(natural.config.js) 에 다음과 같이 전역옵션으로 설정하면 N(data).tree("#eyeColor").bind(); 와 같이 간편하게 사용할 수 있습니다. 다음 예제들은 N.config에 다음과 같이 설정되어 있다는 가정하에 구동되는 예제 입니다. 그렇지 않다면 컴포넌트 초기화 시 key, val, level, parent 옵션을 지정 해야 합니다.</p>
 <pre class="line-numbers"><code class="language-markup"><xmp>
 N.context.attr("ui", {
     ...

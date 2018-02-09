@@ -11,8 +11,8 @@
 	<p>Select(이하 N.select) 는 SELECT, INPUT[TYPE=CHECKBOX], INPUT[TYPE=RADIO] 에 데이터를 주입하여 선택요소를 만들어 주고 기능을 확장시켜주는 컴포넌트입니다.</p>
 
 	<h3>API DEMO</h3>
-	<p lang="ko_KR" class="alert">데모에는 모든 옵션 및 기능을 포함하고 있지 않습니다. 전체 기능 목록은 데모 바로 아래 있는 기능 문서들을 참고 바랍니다.</p>
-	<p lang="en_US" class="alert">The demo does not include all options and features. For a complete list of features, please refer to the function documentation directly below the demo.</p>
+	<p lang="ko_KR" class="note">데모에는 모든 옵션 및 기능을 포함하고 있지 않습니다. 전체 기능 목록은 데모 바로 아래 있는 기능 문서들을 참고 바랍니다.</p>
+	<p lang="en_US" class="note">The demo does not include all options and features. For a complete list of features, please refer to the function documentation directly below the demo.</p>
 	<div data-page="select" class="apidemo"></div>
 
 	<h3>
@@ -48,7 +48,7 @@
 			<td align="center">-</td>
 			<td>
 				<p>기본 옵션을 object 타입으로 지정 합니다.</p>
-				<p class="alert">jQuery Selector 를 입력하면 입력한 인자가 context 옵션으로 지정 됩니다.</p>
+				<p class="note">jQuery Selector 를 입력하면 입력한 인자가 context 옵션으로 지정 됩니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -156,7 +156,7 @@
 			<td align="center">-</td>
 			<td>
 				반환되는 데이터의 타입을 결정하는 구분자 입니다.
-				<div class="alert">
+				<div class="note">
 					<p>selFlag 인자 값에 따라 다음과 같은 타입의 데이터를 반환 합니다.</p>
 					<ul>
 						<li>입력하지 않았거나 undefined : array[json object] 타입의 데이터를 반환 합니다.</li>
@@ -187,8 +187,8 @@
 			<td>N.select</td>
 			<td>
 				<p>지정된 context에 데이터를 바인드 합니다.</p>
-				<p class="alert">요소가 체크박스 일 경우 템플릿 요소가 체크된 상태라면 바인드 될 때 생성되는 요소들도 체크된 상태로 생성 됩니다.</p>
-				<p class="alert">
+				<p class="note">요소가 체크박스 일 경우 템플릿 요소가 체크된 상태라면 바인드 될 때 생성되는 요소들도 체크된 상태로 생성 됩니다.</p>
+				<p class="note">
 					라디오나 체크박스 요소에서, 데이터가 바인드 되면 context 요소에는 id 속성이 있지만 추가로 생성 된 선택지 요소에는 id 속성이 추가 되지 않고 name 속성이 추가 됩니다.
 					생성 된 체크박스나 라디오에 이벤트를 바인드 할때는 id selector 로 요소를 선택하면 맨처음 1개 요소에만 이벤트가 적용되니 attribute 셀렉터로 $("[name=id값]").click(function() {}) 과 같이 요소를 선택하여 이벤트를 바인드 해 주세요.
 				</p>
@@ -257,7 +257,7 @@
 		<span lang="en_US">Examples</span>
 	</h3>
 
-	<p class="alert">예제 데이터</p>
+	<p class="note">예제 데이터</p>
 	<pre class="line-numbers"><code class="language-markup"><xmp>
 var data = [{
 		"key" : "blue",
@@ -270,7 +270,7 @@ var data = [{
 		"val" : "green"
 }]</xmp></code></pre>
 
-<p class="alert">key 옵션과 val 옵션은 N.config(natural.config.js) 에 다음과 같이 전역옵션으로 설정하면 N(data).select("#eyeColor").bind(); 와 같이 간편하게 사용할 수 있습니다. 다음 예제들은 N.config에 다음과 같이 설정되어 있다는 가정하에 구동되는 예제 입니다. 그렇지 않다면 컴포넌트 초기화 시 key, val 옵션을 지정 해야 합니다.</p>
+<p class="note">key 옵션과 val 옵션은 N.config(natural.config.js) 에 다음과 같이 전역옵션으로 설정하면 N(data).select("#eyeColor").bind(); 와 같이 간편하게 사용할 수 있습니다. 다음 예제들은 N.config에 다음과 같이 설정되어 있다는 가정하에 구동되는 예제 입니다. 그렇지 않다면 컴포넌트 초기화 시 key, val 옵션을 지정 해야 합니다.</p>
 <pre class="line-numbers"><code class="language-markup"><xmp>
 N.context.attr("ui", {
     ...
@@ -341,7 +341,7 @@ N.context.attr("ui", {
 	N(data).select("#eyeColor").bind().val(["brown", "green"]);
 </script></xmp></code></pre>
 
-<p class="alert">1 ~ 4 예제는 대상 요소는 다르지만 컴포넌트 초기화 방법은 동일 합니다.</p>
+<p class="note">1 ~ 4 예제는 대상 요소는 다르지만 컴포넌트 초기화 방법은 동일 합니다.</p>
 
 </article>
 

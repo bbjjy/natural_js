@@ -97,7 +97,7 @@ var IndexController = {
 				} else {
 					msg.push("i'm working on translate to english but i don't speak english well. please understand.");
 				}
-				$("section>article").prepend('<p id="notice" class="alert" style="display: none;">' + msg.join(" ") + '</p>').find("#notice").slideDown(300);
+				$("section>article").prepend('<p id="notice" class="note" style="display: none;">' + msg.join(" ") + '</p>').find("#notice").slideDown(300);
 			}, 1000);
 		}
 	}

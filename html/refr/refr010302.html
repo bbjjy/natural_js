@@ -10,8 +10,8 @@
 	<p>Communicator(이하 N.comm) 는 CVC 패턴의 Communicator 영역을 구현한 클래스로서 서버와의 통신을 담당하는 Natural-JS의 공통모듈입니다. Communicator 는 jQuery,ajax 모듈을 사용해서 Ajax로 서버와의 통신을 합니다. Ajax 통신외에 요청마다 Communicator.request 객체가 생성되어 웹 UI 안의 논리적인 페이지(탭, 임베드, 팝업등)의 Controller간 데이터를 송·수신 할 수 있고 불러온 페이지의 Controller 에서 요청정보를 확인 할 수 있습니다.</p>
 
 	<h3>API DEMO</h3>
-	<p lang="ko_KR" class="alert">데모에는 모든 옵션 및 기능을 포함하고 있지 않습니다. 전체 기능 목록은 데모 바로 아래 있는 기능 문서들을 참고 바랍니다.</p>
-	<p lang="en_US" class="alert">The demo does not include all options and features. For a complete list of features, please refer to the function documentation directly below the demo.</p>
+	<p lang="ko_KR" class="note">데모에는 모든 옵션 및 기능을 포함하고 있지 않습니다. 전체 기능 목록은 데모 바로 아래 있는 기능 문서들을 참고 바랍니다.</p>
+	<p lang="en_US" class="note">The demo does not include all options and features. For a complete list of features, please refer to the function documentation directly below the demo.</p>
 	<div data-page="communicator" class="apidemo"></div>
 
 	<h3>
@@ -67,8 +67,8 @@
 				<pre><code class="language-javascript">N("#contents").comm("page.html").submit()</code></pre>
 				<p>* DATA 를 불러올때: </p>
 				<pre><code class="language-javascript">N([{ parameter : "param1" }, { parameter : "param2" }]).comm("data.json").submit(function(data) {})</code></pre>
-				<p class="alert">N() 의 인자로 지정한 파라미터는 Communicator.request.options 의 data 속성으로 저정되어 파라미터로 전달 됩니다.</p>
-				<p class="alert">
+				<p class="note">N() 의 인자로 지정한 파라미터는 Communicator.request.options 의 data 속성으로 저정되어 파라미터로 전달 됩니다.</p>
+				<p class="note">
 					N() 의 인자로 지정한 파라미터는 요청 타입(type, HTTP 에서는 Method)이 GET 일 경우 지정한 파라미터 타입이 JSON 문자열 이나 array[json object] 문자열 이면 q 라는 파라미터 변수명에 해당 문자열을(URL Encode 함) 담아 보냅니다.<br>
 					예) text.html?q=[{"a" : 1}, {"a" : 2}]<br>
 					브라우저마다 GET 파라미터로 보낼수 있는 양이 정해져 있어 파라미터가 잘릴 수 있으니 브라우저별 GET 파라미터 최대 전송량을 파악하여 사용하기 바랍니다.
@@ -137,7 +137,7 @@ N("selector").comm("url").submit(function(html, request) {
 			<td>N.comm</td>
 			<td>
 				<p>에러가 발생 했을때 지정한 에러 핸들러 콜백 함수를 실행 해 줍니다.</p>
-				<p class="alert">error 메서드를 여러번 호출하여 에러 핸들러를 여러개 등록 할 수 있습니다.</p>					
+				<p class="note">error 메서드를 여러번 호출하여 에러 핸들러를 여러개 등록 할 수 있습니다.</p>					
 			</td>
 		</tr>
 		<tr>
@@ -147,7 +147,7 @@ N("selector").comm("url").submit(function(html, request) {
 			<td align="center">-</td>
 			<td style="max-width: 299px;">
 				<p>N.comm 으로 요청 시 에러가 발생하면 실행 될 에러 핸들러 콜백 함수를 정의 합니다.</p>
-				<p class="alert">404, 500 등의 서버 에러 뿐 아니라 요청에 성공(200) 했더라도 submit 함수를 호출 할때 지정 한 콜백에서 에러가 발생 하면 지정 한 에러 핸들러 콜백 함수를 실행 시켜 줍니다.</p>
+				<p class="note">404, 500 등의 서버 에러 뿐 아니라 요청에 성공(200) 했더라도 submit 함수를 호출 할때 지정 한 콜백에서 에러가 발생 하면 지정 한 에러 핸들러 콜백 함수를 실행 시켜 줍니다.</p>
 				
 				<p>콜백 함수의 this 는 생성 된 N.comm 인스턴스 이고 다음과 같은 인자를 반환 합니다.</p>
 				<ul>
@@ -206,7 +206,7 @@ N.comm("url").error(function(e, request, xhr, textStatus, callback) {
 			<td>true</td>
 			<td>
 				<p>Ajax request 에 대한 contentType을 지정 합니다</p>
-				<p class="alert">
+				<p class="note">
 					contentType 은 jQuery.ajax 함수의 옵션이 그대로 적용 됩니다.
 					<a class="link" target="blank_" href="http://api.jquery.com/jquery.ajax/">jQuery.ajax</a>
 					메뉴얼의 settings 부분에서 contentType 속성을 참고 하세요.
@@ -220,7 +220,7 @@ N.comm("url").error(function(e, request, xhr, textStatus, callback) {
 			<td></td>
 			<td>
 				<p>브라우저 캐시 적용 여부</p>
-				<p class="alert">
+				<p class="note">
 					cache 는 jQuery.ajax 함수의 옵션이 그대로 적용 됩니다.
 					<a class="link" target="blank_" href="http://api.jquery.com/jquery.ajax/">jQuery.ajax</a>
 					메뉴얼의 settings 부분에서 cache 속성을 참고 하세요.
@@ -234,7 +234,7 @@ N.comm("url").error(function(e, request, xhr, textStatus, callback) {
 			<td></td>
 			<td>
 				<p>Ajax 요청을 비동기 방식으로 처리할지 동기방식으로 처리할지 지정 합니다</p>
-				<p class="alert">
+				<p class="note">
 					async 는 jQuery.ajax 함수의 옵션이 그대로 적용 됩니다.
 					<a class="link" target="blank_" href="http://api.jquery.com/jquery.ajax/">jQuery.ajax</a>
 					메뉴얼의 settings 부분에서 async 속성을 참고 하세요.
@@ -248,7 +248,7 @@ N.comm("url").error(function(e, request, xhr, textStatus, callback) {
 			<td></td>
 			<td>
 				<p>Ajax 요청에 대한 HTTP Method를 지정 합니다</p>
-				<p class="alert">
+				<p class="note">
 					type 은 jQuery.ajax 함수의 옵션이 그대로 적용 됩니다.
 					<a class="link" target="blank_" href="http://api.jquery.com/jquery.ajax/">jQuery.ajax</a>
 					메뉴얼의 settings 부분에서 type 속성을 참고 하세요.
@@ -262,7 +262,7 @@ N.comm("url").error(function(e, request, xhr, textStatus, callback) {
 			<td></td>
 			<td>
 				<p>요청 파라미터를 지정 합니다.</p>
-				<p class="alert">
+				<p class="note">
 					data 는 jQuery.ajax 함수의 옵션이 그대로 적용 됩니다.
 					<a class="link" target="blank_" href="http://api.jquery.com/jquery.ajax/">jQuery.ajax</a>
 					메뉴얼의 settings 부분에서 data 속성을 참고 하세요.
@@ -276,15 +276,15 @@ N.comm("url").error(function(e, request, xhr, textStatus, callback) {
 			<td></td>
 			<td>
 				요청 파라미터의 객체 타입이 array 일 경우 array 자체를 서버에 보내고 싶을때 true로 설정
-				<p class="alert">
+				<p class="note">
 					N(params).comm(url).submit() 와 같이 사용할 때 params의 객체타입이 array 일때 dataIsArray 옵션이 false 로 지정되어 있다면 array 의 첫번째 오브젝트만 전달 됩니다.
 					해당 문제는 N(params) 구문에 의해 params를 jquery object로 변환되는 과정에서 $([{}]) 와 같이 하나 $({}) 와 같이 하나 get 했을때 [{}] 로만 반환이 되어서 생기는 문제 입니다.
 					불편하더라도 array 를 넘길때는 dataIsArray 를 true로 설정하거나 object 에 array를 담아서 사용 바랍니다.
 				</p>
-				<p class="alert">
+				<p class="note">
 					N.comm(params, url).submit() 와 같이 사용하면 dataIsArray 옵션을 true로 지정하지 않아도 params를 jquery object화 하지않기 때문에 params의 객체타입이 array 더라도 그대로 전송 됩니다.
 				</p>
-				<p class="alert">Natural-ARCHITECTURE v0.8.1.4 버전 이후부터 적용</p>
+				<p class="note">Natural-ARCHITECTURE v0.8.1.4 버전 이후부터 적용</p>
 			</td>
 		</tr>
 		<tr>
@@ -294,7 +294,7 @@ N.comm("url").error(function(e, request, xhr, textStatus, callback) {
 			<td></td>
 			<td>
 				<p>응답받을 데이터의 타입을 지정합니다</p>
-				<p class="alert">
+				<p class="note">
 					dataType 은 jQuery.ajax 함수의 옵션이 그대로 적용 됩니다.
 					<a class="link" target="blank_" href="http://api.jquery.com/jquery.ajax/">jQuery.ajax</a>
 					메뉴얼의 settings 부분에서 dataType 속성을 참고 하세요.
@@ -345,7 +345,7 @@ N.comm("url").error(function(e, request, xhr, textStatus, callback) {
 			<td></td>
 			<td>
 				HTML 컨텐츠를 가져올 때 가져온 컨텐츠를 자동으로 삽입할 요소를 지정 합니다.
-				<p class="alert">
+				<p class="note">
 					N("#block").comm("page.html").submit(); 과 같이 HTML 페이지를 불러올 경우 자동으로 target 속성 값은 N("#block") 오브젝트로 지정 됩니다.
 				</p>
 			</td>
@@ -433,13 +433,13 @@ N.comm("url").error(function(e, request, xhr, textStatus, callback) {
 			<td>Controller object</td>
 			<td style="max-width: 299px;">
 				<p>해당 블록 페이지를 다시 로드 합니다.</p>
-				<p class="alert">reload 함수 호출 전에 request.attr 함수로 값을 지정하지 않았다면 리로드 전의 request 객체의 값은 리로드 해도 유지 됩니다.</p>
-				<p class="alert">reload 되는 페이지에 값을 전달 하려면 request.attr() 로 전달 할 값을 저장 후 reload 함수를 호출 하면 됩니다.</p>
+				<p class="note">reload 함수 호출 전에 request.attr 함수로 값을 지정하지 않았다면 리로드 전의 request 객체의 값은 리로드 해도 유지 됩니다.</p>
+				<p class="note">reload 되는 페이지에 값을 전달 하려면 request.attr() 로 전달 할 값을 저장 후 reload 함수를 호출 하면 됩니다.</p>
 				<pre><code class="language-javascript">
 request.attr("param", { param : 1 });
 request.reload();
 </code></pre>
-				<p class="alert">request.attr("param", { param : 1 }).reload() 와 같이 메서드 체이닝을 지원하지 않습니다.</p>
+				<p class="note">request.attr("param", { param : 1 }).reload() 와 같이 메서드 체이닝을 지원하지 않습니다.</p>
 			</td>
 		</tr>
 		<tr>

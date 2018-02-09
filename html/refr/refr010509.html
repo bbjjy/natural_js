@@ -15,8 +15,8 @@
 	</p>
 
 	<h3>API DEMO</h3>
-	<p lang="ko_KR" class="alert">데모에는 모든 옵션 및 기능을 포함하고 있지 않습니다. 전체 기능 목록은 데모 바로 아래 있는 기능 문서들을 참고 바랍니다.</p>
-	<p lang="en_US" class="alert">The demo does not include all options and features. For a complete list of features, please refer to the function documentation directly below the demo.</p>
+	<p lang="ko_KR" class="note">데모에는 모든 옵션 및 기능을 포함하고 있지 않습니다. 전체 기능 목록은 데모 바로 아래 있는 기능 문서들을 참고 바랍니다.</p>
+	<p lang="en_US" class="note">The demo does not include all options and features. For a complete list of features, please refer to the function documentation directly below the demo.</p>
 	<div data-page="pagination" class="apidemo"></div>
 
 	<h3>
@@ -52,7 +52,7 @@
 			<td align="center">-</td>
 			<td>
 				<p>기본 옵션을 object 타입으로 지정 합니다.</p>
-				<p class="alert">jQuery Selector 를 입력하면 입력한 인자가 context 옵션으로 지정 됩니다.</p>
+				<p class="note">jQuery Selector 를 입력하면 입력한 인자가 context 옵션으로 지정 됩니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -93,8 +93,8 @@
 			<td align="center">○</td>
 			<td>
 				<p>context(HTML Templete)요소에 바인드 할 데이터</p>
-				<p class="alert">data가 입력되면 totalCount 값이 자동으로 계산되어 들어가므로 totalCount 값을 0으로 지정하거나 지정하지 않아야 합니다.</p>
-				<p class="alert">
+				<p class="note">data가 입력되면 totalCount 값이 자동으로 계산되어 들어가므로 totalCount 값을 0으로 지정하거나 지정하지 않아야 합니다.</p>
+				<p class="note">
 					서버에서 DB 쿼리로 페이징 시 에는 data 옵션을 지정하지 말고 totalCount 값만 서버에서 얻어와 지정하기 바랍니다.<br>
 					ex) N().pagination({ totalCount : 1234 });
 				</p>
@@ -114,7 +114,7 @@
 			<td align="center">○</td>
 			<td>
 				<p>페이징 될 전체 로우 카운트를 지정 합니다.</p>
-				<p class="alert">서버에서 DB 쿼리로 페이징 시 에는 data 옵션을 지정하지 말고 totalCount 값만 서버에서 얻어와 지정하기 바랍니다.</p>
+				<p class="note">서버에서 DB 쿼리로 페이징 시 에는 data 옵션을 지정하지 말고 totalCount 값만 서버에서 얻어와 지정하기 바랍니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -152,8 +152,8 @@
 	// selData 는 선택한 페이지가 가지고 있는 데이터 리스트
 	// currPageNavInfo 는 이벤트가 발생할 시점의 페이징 정보
 }</code></pre>
-				<p class="alert">서버에서 DB 쿼리로 페이징 시  먼저 조회하고자 하는 전체 행수를 가져오고 onChange 이벤트 핸들러의 인자로 들어오는 currPageNavInfo 정보로 선택될 DB 로우의 시작값(currPageNavInfo.startRowNum)과 얼마만큼 가져올건지의 정보(currPageNavInfo.countPerPage) 등을 서버에 파라미터로 던져 해당 행수 만큼만 가져와 N.grid 에 bind하는 타입으로 서버단 페이징을 처리 할 수 있습니다.</p>
-				<p class="alert">
+				<p class="note">서버에서 DB 쿼리로 페이징 시  먼저 조회하고자 하는 전체 행수를 가져오고 onChange 이벤트 핸들러의 인자로 들어오는 currPageNavInfo 정보로 선택될 DB 로우의 시작값(currPageNavInfo.startRowNum)과 얼마만큼 가져올건지의 정보(currPageNavInfo.countPerPage) 등을 서버에 파라미터로 던져 해당 행수 만큼만 가져와 N.grid 에 bind하는 타입으로 서버단 페이징을 처리 할 수 있습니다.</p>
+				<p class="note">
 					currPageNavInfo 정보<br>
 					&nbsp;&nbsp;-&nbsp;pageNo : 선택한 페이지 번호<br>
 					&nbsp;&nbsp;-&nbsp;countPerPage : 페이지당 행 수<br>
@@ -209,7 +209,7 @@
 			<td align="center">-</td>
 			<td>
 				반환되는 데이터의 타입을 결정하는 구분자 입니다.
-				<div class="alert">
+				<div class="note">
 					<p>selFlag 인자 값에 따라 다음과 같은 타입의 데이터를 반환 합니다.</p>
 					<ul>
 						<li>입력하지 않았거나 undefined : array[json object] 타입의 데이터를 반환 합니다.</li>
@@ -261,8 +261,8 @@
 			<td>
 				<p>페이지번호 값을 가져오거나 지정 합니다.</p>
 				<p>인자가 없으면 pageNo 값을 가져오고 첫번째 인자를 입력하면 입력된 값으로 pageNo가 지정 됩니다.</p>
-				<p class="alert">인스턴스 내부의 값만 변경 되므로 이후 bind 메서드를 호출 해 줘야 바뀐 부분이 화면에 표시됩니다.</p>
-				<p class="alert">N.pagination 이 이미 인스턴스화 된 후 페이지를 변경할때 사용 됩니다.</p>
+				<p class="note">인스턴스 내부의 값만 변경 되므로 이후 bind 메서드를 호출 해 줘야 바뀐 부분이 화면에 표시됩니다.</p>
+				<p class="note">N.pagination 이 이미 인스턴스화 된 후 페이지를 변경할때 사용 됩니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -280,8 +280,8 @@
 			<td>
 				<p>전체 행 건수 값을 가져오거나 지정 합니다.</p>
 				<p>인자가 없으면 totalCount 값을 가져오고 첫번째 인자를 입력하면 입력된 값으로 totalCount가 지정 됩니다.</p>
-				<p class="alert">인스턴스 내부의 값만 변경 되므로 이후 bind 메서드를 호출 해 줘야 바뀐 부분이 화면에 표시됩니다.</p>
-				<p class="alert">N.pagination 이 이미 인스턴스화 된 후 전체 행 수를 변경할때 사용 됩니다.</p>
+				<p class="note">인스턴스 내부의 값만 변경 되므로 이후 bind 메서드를 호출 해 줘야 바뀐 부분이 화면에 표시됩니다.</p>
+				<p class="note">N.pagination 이 이미 인스턴스화 된 후 전체 행 수를 변경할때 사용 됩니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -299,8 +299,8 @@
 			<td>
 				<p>페이지 당 행 수 값을 가져오거나 지정 합니다.</p>
 				<p>인자가 없으면 countPerPage 값을 가져오고 첫번째 인자를 입력하면 입력된 값으로 countPerPage가 지정 됩니다.</p>
-				<p class="alert">인스턴스 내부의 값만 변경 되므로 이후 bind 메서드를 호출 해 줘야 바뀐 부분이 화면에 표시됩니다.</p>
-				<p class="alert">N.pagination 이 이미 인스턴스화 된 후 페이지당 행수를 변경할때 사용 됩니다.</p>
+				<p class="note">인스턴스 내부의 값만 변경 되므로 이후 bind 메서드를 호출 해 줘야 바뀐 부분이 화면에 표시됩니다.</p>
+				<p class="note">N.pagination 이 이미 인스턴스화 된 후 페이지당 행수를 변경할때 사용 됩니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -318,8 +318,8 @@
 			<td>
 				<p>페이지 세트 당 페이지 수 값을 가져오거나 지정 합니다.</p>
 				<p>인자가 없으면 countPerPageSet 값을 가져오고 첫번째 인자를 입력하면 입력된 값으로 countPerPageSet가 지정 됩니다.</p>
-				<p class="alert">인스턴스 내부의 값만 변경 되므로 이후 bind 메서드를 호출 해 줘야 바뀐 부분이 화면에 표시됩니다.</p>
-				<p class="alert">N.pagination 이 이미 인스턴스화 된 후 페이징 수를 변경할때 사용 됩니다.</p>
+				<p class="note">인스턴스 내부의 값만 변경 되므로 이후 bind 메서드를 호출 해 줘야 바뀐 부분이 화면에 표시됩니다.</p>
+				<p class="note">N.pagination 이 이미 인스턴스화 된 후 페이징 수를 변경할때 사용 됩니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -464,7 +464,7 @@
 </script></xmp></code></pre>
 
 	<h4 class="notIndex">4. N.pagination과 N.grid 를 연동하여 서버(DB) 페이징</h4>
-	<p class="alert">서버에서 DB 쿼리로 페이징 시  먼저 조회하고자 하는 전체 행수를 가져오고 onChange 이벤트 핸들러의 인자로 들어오는 currPageNavInfo 정보로 선택될 DB 로우의 시작값(currPageNavInfo.startRowNum)과 얼마만큼 가져올건지의 정보(currPageNavInfo.countPerPage) 등을 서버에 파라미터로 던져 해당 행수 만큼만 가져와 N.grid 에 bind하는 타입으로 서버단 페이징을 처리 할 수 있습니다.</p>
+	<p class="note">서버에서 DB 쿼리로 페이징 시  먼저 조회하고자 하는 전체 행수를 가져오고 onChange 이벤트 핸들러의 인자로 들어오는 currPageNavInfo 정보로 선택될 DB 로우의 시작값(currPageNavInfo.startRowNum)과 얼마만큼 가져올건지의 정보(currPageNavInfo.countPerPage) 등을 서버에 파라미터로 던져 해당 행수 만큼만 가져와 N.grid 에 bind하는 타입으로 서버단 페이징을 처리 할 수 있습니다.</p>
 	<pre class="line-numbers"><code class="language-markup"><xmp>
 <table id="paginationExample41">
 	<thead><!-- 컬럼 타이틀 영역 -->
@@ -517,7 +517,7 @@
 	});
 </script></xmp></code></pre>
 
-	<p class="alert">DB 페이징 시 리스트 데이터에 total count 가 같이 전달 된다면 N.grid 를 주(主)로 하고 pagination 인스턴스에서 bind(data, totalCnt) 메서드를 매번 호출하여 처리 할 수도 있습니다.</p>
+	<p class="note">DB 페이징 시 리스트 데이터에 total count 가 같이 전달 된다면 N.grid 를 주(主)로 하고 pagination 인스턴스에서 bind(data, totalCnt) 메서드를 매번 호출하여 처리 할 수도 있습니다.</p>
 
 </article>
 

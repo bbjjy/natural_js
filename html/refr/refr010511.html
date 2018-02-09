@@ -11,8 +11,8 @@
 	<p>List(이하 N.list)는 &lt;ul&gt; / &lt;li&gt; 요소에 데이터를 바인드하여 단일 컬럼 타입으로 데이터 목록을 표현 해 주는 컴포넌트입니다.</p>
 
 	<h3>API DEMO</h3>
-	<p lang="ko_KR" class="alert">데모에는 모든 옵션 및 기능을 포함하고 있지 않습니다. 전체 기능 목록은 데모 바로 아래 있는 기능 문서들을 참고 바랍니다.</p>
-	<p lang="en_US" class="alert">The demo does not include all options and features. For a complete list of features, please refer to the function documentation directly below the demo.</p>
+	<p lang="ko_KR" class="note">데모에는 모든 옵션 및 기능을 포함하고 있지 않습니다. 전체 기능 목록은 데모 바로 아래 있는 기능 문서들을 참고 바랍니다.</p>
+	<p lang="en_US" class="note">The demo does not include all options and features. For a complete list of features, please refer to the function documentation directly below the demo.</p>
 	<div data-page="list" class="apidemo"></div>
 
 	<h3>
@@ -48,7 +48,7 @@
 			<td align="center">-</td>
 			<td>
 				<p>기본 옵션을 object 타입으로 지정 합니다.</p>
-				<p class="alert">jQuery Selector 를 입력하면 입력한 인자가 context 옵션으로 지정 됩니다.</p>
+				<p class="note">jQuery Selector 를 입력하면 입력한 인자가 context 옵션으로 지정 됩니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -128,7 +128,7 @@
 			<td>
 				<p>add 메서드를 호출했을 때 새로운 행요소와 데이터세트를 리스트의 상단에 추가할건지 하단에 추가할건지를 결정 합니다.</p>
 				<p>true 이면 상단에 추가하고 false 이면 하단에 추가 합니다.</p>
-				<p class="alert">addTop 옵션이 false 이면 scrollPaging.size 옵션과 createRowDelay 옵션을 강제로 0으로 설정 하여 스크롤페이징 기능과 행이 순서대로 그려지는 효과를 비활성화 시킵니다.</p>
+				<p class="note">addTop 옵션이 false 이면 scrollPaging.size 옵션과 createRowDelay 옵션을 강제로 0으로 설정 하여 스크롤페이징 기능과 행이 순서대로 그려지는 효과를 비활성화 시킵니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -162,7 +162,7 @@
 			<td></td>
 			<td>
 				<p>revert 기능을 활성(true), 비활성(false) 시킵니다.</p>
-				<p class="alert">revert 기능을 활성화 하면 최초 바인딩된 데이터를 메모리에 적제 하므로 데이터 바인딩 성능이 저하될 수 있습니다.</p>
+				<p class="note">revert 기능을 활성화 하면 최초 바인딩된 데이터를 메모리에 적제 하므로 데이터 바인딩 성능이 저하될 수 있습니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -182,7 +182,7 @@
 			<td></td>
 			<td>
 				<p>select 기능이 활성화(true) 되었을 경우 선택된 행을 다시 선택하여 선택을 취소 할 것인지 여부를 설정</p>
-				<p class="alert">multiselect 옵션이 true 일 경우에는 unselect 옵션이 적용 되지 않습니다.</p>
+				<p class="note">multiselect 옵션이 true 일 경우에는 unselect 옵션이 적용 되지 않습니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -202,8 +202,8 @@
 			<td></td>
 			<td>
 				<p>리스트의 행을 선택하기 위한 체크박스를 모두 선택하는 checkbox input 요소 지정 합니다.</p>
-				<p class="alert">N.grid 와 달리 문자열로 지정하지 않고 정확하게 해당 요소를 Select 하여 jquery object 타입으로 지정 바랍니다.</p>
-				<p class="alert">전체 선택 만 해 주고 체크박스의 클릭 이벤트는 발생 시키지 않습니다.</p>
+				<p class="note">N.grid 와 달리 문자열로 지정하지 않고 정확하게 해당 요소를 Select 하여 jquery object 타입으로 지정 바랍니다.</p>
+				<p class="note">전체 선택 만 해 주고 체크박스의 클릭 이벤트는 발생 시키지 않습니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -213,10 +213,10 @@
 			<td></td>
 			<td>
 				<p>리스트의 행을 선택하기 위한 체크박스 요소들을 지정(멀티 선택) 합니다.</p>
-				<p class="alert">jQuery selector 문자열로 지정하며 selector 의 context는 리스트 body(li) 로 자동 지정 됩니다.</p>
-				<p class="alert">checkAllTarget 대상 요소는 반드시 li 영역에 있어야 합니다.</p>
-				<p class="alert">checkAllTarget 옵션과 checkSingleTarget 옵션은 둘중 하나만 사용 할 수 있습니다.</p>
-				<p class="alert">id 속성을 지정하여 데이터를 바인드 하면 정상적으로 작동하지 않습니다. 선택 된 행의 인덱스를 가져오는 용도로만 사용 바랍니다.</p>
+				<p class="note">jQuery selector 문자열로 지정하며 selector 의 context는 리스트 body(li) 로 자동 지정 됩니다.</p>
+				<p class="note">checkAllTarget 대상 요소는 반드시 li 영역에 있어야 합니다.</p>
+				<p class="note">checkAllTarget 옵션과 checkSingleTarget 옵션은 둘중 하나만 사용 할 수 있습니다.</p>
+				<p class="note">id 속성을 지정하여 데이터를 바인드 하면 정상적으로 작동하지 않습니다. 선택 된 행의 인덱스를 가져오는 용도로만 사용 바랍니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -226,10 +226,10 @@
 			<td></td>
 			<td>
 				<p>리스트의 행을 선택하기 위한 체크박스 요소들을 지정(단일 선택) 합니다.</p>
-				<p class="alert">jQuery selector 문자열로 지정하며 selector 의 context는 리스트 body(li) 로 자동 지정 됩니다.</p>
-				<p class="alert">checkSingleTarget 대상 요소는 반드시 li 영역에 있어야 합니다.</p>
-				<p class="alert">checkAllTarget 옵션과 checkSingleTarget 옵션은 둘중 하나만 사용 할 수 있습니다.</p>
-				<p class="alert">id 속성을 지정하여 데이터를 바인드 하면 정상적으로 작동하지 않습니다. 선택 된 행의 인덱스를 가져오는 용도로만 사용 바랍니다.</p>
+				<p class="note">jQuery selector 문자열로 지정하며 selector 의 context는 리스트 body(li) 로 자동 지정 됩니다.</p>
+				<p class="note">checkSingleTarget 대상 요소는 반드시 li 영역에 있어야 합니다.</p>
+				<p class="note">checkAllTarget 옵션과 checkSingleTarget 옵션은 둘중 하나만 사용 할 수 있습니다.</p>
+				<p class="note">id 속성을 지정하여 데이터를 바인드 하면 정상적으로 작동하지 않습니다. 선택 된 행의 인덱스를 가져오는 용도로만 사용 바랍니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -239,7 +239,7 @@
 			<td></td>
 			<td>
 				<p>리스트 행들의 HOVER 효과 적용 여부</p>
-				<p class="alert">리스트 행에 mouseover 시 해당 행의 LI요소에 "list_hover__" 스타일클래스가 생성되고 선택이 해제되면 생성된 스타일클래스가 제거 됩니다.</p>
+				<p class="note">리스트 행에 mouseover 시 해당 행의 LI요소에 "list_hover__" 스타일클래스가 생성되고 선택이 해제되면 생성된 스타일클래스가 제거 됩니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -249,7 +249,7 @@
 			<td></td>
 			<td>
 				<p>행 요소들이 생성될 때마다의 딜레이를 지정 할수 있습니다.</p>
-				<p class="alert">0 지정시 모든행을 한번에 만들어 표현 합니다. 이렇게 되면 브라우저는 모든행이 생성될때까지 멈춰있게 됩니다.</p>
+				<p class="note">0 지정시 모든행을 한번에 만들어 표현 합니다. 이렇게 되면 브라우저는 모든행이 생성될때까지 멈춰있게 됩니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -260,8 +260,8 @@
 			<td>
 				<p>헤더고정형 리스트에서는 스크롤페이징이 기본으로 적용됩니다. 페이징시 한번에 바인드하는 행수를 지정 합니다.</p>
 				<p>0 을 지정 하면 스크롤 페이징 기능이 비 활성화 됩니다.</p>
-				<p class="alert">너무 작게 지정하면 스크롤 이벤트가 감지 되지 않아 데이터가 모두 표시 되지 않습니다. 반드시 행 들이 리스트 바디를 넘칠 수 있는 양을 지정 해 주세요.</p>
-				<p class="alert">너무 크게 지정하면 스크롤 페이징이 작동될때 브라우저에 부하가 발생되므로 리스트에 입력요소나 이미지가 들어 있다면 200 이하로 그렇지 않다면 1000 이하로 설정하는 것을 권장합니다.</p>
+				<p class="note">너무 작게 지정하면 스크롤 이벤트가 감지 되지 않아 데이터가 모두 표시 되지 않습니다. 반드시 행 들이 리스트 바디를 넘칠 수 있는 양을 지정 해 주세요.</p>
+				<p class="note">너무 크게 지정하면 스크롤 페이징이 작동될때 브라우저에 부하가 발생되므로 리스트에 입력요소나 이미지가 들어 있다면 200 이하로 그렇지 않다면 1000 이하로 설정하는 것을 권장합니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -333,7 +333,7 @@
 	// rowEle : 생성되는 행의 row element(tbody)
 	// rowData : 생성되는 행의 row data
 }</code></pre>
-				<p class="alert">rowHandlerBeforeBind 는 행 마다 값이 바인드 되기 전 실행 됩니다.</p>
+				<p class="note">rowHandlerBeforeBind 는 행 마다 값이 바인드 되기 전 실행 됩니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -349,7 +349,7 @@
 	// rowEle : 생성되는 행의 row element(li)
 	// rowData : 생성되는 행의 row data
 }</code></pre>
-				<p class="alert">rowHandler 는 행 마다 값이 바인드 된 후 실행 됩니다.</p>
+				<p class="note">rowHandler 는 행 마다 값이 바인드 된 후 실행 됩니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -367,8 +367,8 @@
 	// beforeRowIdx : 이전 선택된 행의 index
 	// e : Click event object
 }</code></pre>
-				<p class="alert">select 옵션이 true 일 때만 발생 됩니다.</p>
-				<p class="alert">
+				<p class="note">select 옵션이 true 일 때만 발생 됩니다.</p>
+				<p class="note">
 					unselect 옵션이 false(기본값) 이면 선택이 해제 되었을 때 rowIdx 인자 값에 -1을 반환 하고 선택 되었을 때는 선택 된 행의 인덱스를 반환 합니다.
 					unselect 옵션이 true 이면 선택 해제 기능이 비활성화 되기 때문에 rowIdx 값은 항상 선택 된 행의 인덱스를 반환 합니다.
 				</p>
@@ -386,7 +386,7 @@
 	// context : context(리스트 컨텍스트 요소)
 	// data : 리스트에 바인드 된 데이터
 }</code></pre>
-				<p class="alert">스크롤페이징에 의해 페이징 될 때도 해당 행수 만큼 페이지가 완성 될 때마다 발생합니다.</p>
+				<p class="note">스크롤페이징에 의해 페이징 될 때도 해당 행수 만큼 페이지가 완성 될 때마다 발생합니다.</p>
 			</td>
 		</tr>
 	</table>
@@ -442,7 +442,7 @@
 			<td align="center">-</td>
 			<td>
 				반환되는 데이터의 타입을 결정하거나 데이터를 필터링 하기 위한 구분자 입니다.
-				<div class="alert">
+				<div class="note">
 					<p>rowStatus 인자 값에 따라 다음과 같은 타입의 데이터를 반환 합니다.</p>
 					<ul>
 						<li>입력하지 않았거나 undefined : array[json object] 타입의 데이터를 반환 합니다.</li>
@@ -499,7 +499,7 @@ listInstance.data("modified", "col01", "col02", "col03");
  	col03 : ""
 }]
 */</code></pre>
-				<p class="alert">첫번째 인자로 "modified", "selected", "checked", "insert", "update", "delete" 를 지정 했을 때만 작동 됩니다.</p>
+				<p class="note">첫번째 인자로 "modified", "selected", "checked", "insert", "update", "delete" 를 지정 했을 때만 작동 됩니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -523,7 +523,7 @@ listInstance.data("modified", "col01", "col02", "col03");
 			<td>jquery object</td>
 			<td>
 				<p>리스트 bind 전 초기화 시 지정된 리스트 바디 템플릿 요소를 반환 합니다.</p>
-				<p class="alert">N.list 는 이 요소를 복제하여 행들을 만듭니다.</p>
+				<p class="note">N.list 는 이 요소를 복제하여 행들을 만듭니다.</p>
 				<p>contextBodyTemplate 메서드를 통해 반환 된 요소의 구성을 수정하고 다시 바인드 하면 수정된 모양의 리스트 바디가 만들어 집니다.</p>
 				<p>동적으로 리스트 바디의 모양을 바꿔야 된다면 contextBodyTemplate 메서드와 jQuery 를 활용하여 템플릿을 수정하기 바랍니다.</p>
 			</td>
@@ -640,7 +640,7 @@ init : function() {
 			<td align="center">-</td>
 			<td>
 				두번째 인자에 "append" 라는 문자열을 지정하면 처음 바인드 되어 있던 데이터에 다시 바인드 한 데이터를 합쳐 주고 첫번째 인자로 지정한 data를 리스트에 추가로 표시 해 줍니다.
-				<p class="alert">"append" 인자가 입력 되면 scrollPaging.size 옵션 값 자동으로 0 으로 지정 되어 스크롤 페이징 기능이 비활성화 됩니다.</p>
+				<p class="note">"append" 인자가 입력 되면 scrollPaging.size 옵션 값 자동으로 0 으로 지정 되어 스크롤 페이징 기능이 비활성화 됩니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -660,8 +660,8 @@ init : function() {
 			<td align="center">-</td>
 			<td>
 				새로운 행을 생성할 때 컬럼값들의 기본값을 지정 할 수 있습니다.
-				<p class="alert">인자로 지정된 데이터는 add 호출 시 생성된 기본 데이터를 확장 합니다.</p>
-				<p class="alert">data 인자의 type 이 number 타입이면 다음 옵션인 row 로 인식 됩니다.</p>
+				<p class="note">인자로 지정된 데이터는 add 호출 시 생성된 기본 데이터를 확장 합니다.</p>
+				<p class="note">data 인자의 type 이 number 타입이면 다음 옵션인 row 로 인식 됩니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -725,8 +725,8 @@ init : function() {
 			<td>value object|N.list</td>
 			<td>
 				<p>선택한 컬럼의 원래 값을 가져오거나 입력(수정) 합니다.</p>
-				<p class="alert">val 인자를 입력하지 않으면 선택한 값을 반환하고 입력하면 선택한 키 컬럼의 값을 입력한 값으로 바꿔 줍니다.</p>
-				<p class="alert">값 입력 시 입력한 키 에 해당하는 데이터 없으면 새로운 컬럼 데이터를 생성 합니다.</p>
+				<p class="note">val 인자를 입력하지 않으면 선택한 값을 반환하고 입력하면 선택한 키 컬럼의 값을 입력한 값으로 바꿔 줍니다.</p>
+				<p class="note">값 입력 시 입력한 키 에 해당하는 데이터 없으면 새로운 컬럼 데이터를 생성 합니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -750,7 +750,7 @@ init : function() {
 			<td align="center">-</td>
 			<td>
 				<p>저장할 값</p>
-				<p class="alert">key 인자 값과 같은 id 속성값을 가진 HTML 요소가 있다면 null 은 빈 문자열 숫자는 숫자 문자열, Boolean 은 "true" 나 "false" 문자열로 변환 되어 저장 되고 대상 HTML 요소가 없다면 원형 그대로 저장 됩니다.</p>
+				<p class="note">key 인자 값과 같은 id 속성값을 가진 HTML 요소가 있다면 null 은 빈 문자열 숫자는 숫자 문자열, Boolean 은 "true" 나 "false" 문자열로 변환 되어 저장 되고 대상 HTML 요소가 없다면 원형 그대로 저장 됩니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -846,10 +846,10 @@ init : function() {
 			<td align="center">-</td>
 			<td>
 				<p>이동 할 위치의 행 인덱스를 입력 합니다.</p>
-				<p class="alert">
+				<p class="note">
 					지정 한 행 이전으로 이동 됩니다. 마지막 행으로 이동 하려면 마지막 행 인덱스 값에 1을 더하여 입력 해 주세요.
 				</p>
-				<p class="alert">
+				<p class="note">
 					입력 한 값이 바인드 되어 있는 데이터의 전체 행 수 보다 클 경우 항상 마지막 행 다음으로 이동 됩니다.
 				</p>
 			</td>
@@ -879,10 +879,10 @@ init : function() {
 			<td align="center">-</td>
 			<td>
 				<p>복사 할 위치의 행 인덱스를 입력 합니다.</p>
-				<p class="alert">
+				<p class="note">
 					지정 한 행 이전으로 복사 됩니다. 마지막 행으로 복사 하려면 마지막 행 인덱스 값에 1을 더하여 입력 해 주세요.
 				</p>
-				<p class="alert">
+				<p class="note">
 					입력 한 값이 바인드 되어 있는 데이터의 전체 행 수 보다 클 경우 항상 마지막 행 다음으로 복사 됩니다.
 				</p>
 			</td>
@@ -894,7 +894,7 @@ init : function() {
 		<span lang="en_US">Examples</span>
 	</h3>
 
-	<p class="alert">예제 데이터</p>
+	<p class="note">예제 데이터</p>
 	<pre class="line-numbers"><code class="language-markup"><xmp>
 var data = [{
     "name": "Dean Stanley",
@@ -932,7 +932,7 @@ var data = [{
 </script></xmp></code></pre>
 
 	<h4 class="notIndex">1.1. 리스트에 데이터 바인드(Row Handler 적용)</h4>
-	<p class="alert">rowHandler 이벤트는 리스트 렌더링 시 행이 만들어질때마다 발생하는 이벤트 입니다. 기본 제공하는 리스트의 기능을 확장하기 위해 사용됩니다.</p>
+	<p class="note">rowHandler 이벤트는 리스트 렌더링 시 행이 만들어질때마다 발생하는 이벤트 입니다. 기본 제공하는 리스트의 기능을 확장하기 위해 사용됩니다.</p>
 	<pre class="line-numbers"><code class="language-markup"><xmp>
 <ul id="listExample12">
 	<li>
@@ -1006,7 +1006,7 @@ var data = [{
 </script></xmp></code></pre>
 
 	<h4 class="notIndex">4. N.select 와 N.list 연동</h4>
-	<p class="alert">N.select 와 N.list을 연동하여 사용할 때는 반드시 N.select 를 먼저 초기화 하고 N.list 를 그 다음에 초기화 해야 합니다.</p>
+	<p class="note">N.select 와 N.list을 연동하여 사용할 때는 반드시 N.select 를 먼저 초기화 하고 N.list 를 그 다음에 초기화 해야 합니다.</p>
 	<pre class="line-numbers"><code class="language-markup"><xmp>
 <ul id="listExample40">
 	<li><!-- 데이터가 반복되면서 바인드 되는 부분 -->
@@ -1037,7 +1037,7 @@ var data = [{
 </script></xmp></code></pre>
 
 	<h4 class="notIndex">5. onSelect 이벤트를 이용하지 않고 행 의 특정 요소 클릭 시 동작하는 이벤트 핸들러를 jQuery on 을 이용하여 직접 정의.</h4>
-	<p class="alert">N.list 의 행 요소들은 다시 바인드 하면 사라지고 다시 생성 되므로 bind나 click 대신 on 메서드를 이용하여 이벤트를 바인드 해야 합니다.</p>
+	<p class="note">N.list 의 행 요소들은 다시 바인드 하면 사라지고 다시 생성 되므로 bind나 click 대신 on 메서드를 이용하여 이벤트를 바인드 해야 합니다.</p>
 <pre class="line-numbers"><code class="language-javascript">
 // Controller
 N("selector").cont(function() {

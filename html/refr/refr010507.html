@@ -9,12 +9,12 @@
 		<span lang="en_US">Overview</span>
 	</h3>
 	<p>Form(이하 N.form)은 폼 입력, 조회 양식을 구성하는 폼 블록(Block)요소(DIV, TABLE, SPAN 등)에 데이터를 바인드(bind)하거나 생성(add)하여 폼을 구현 해 주는 컴포넌트입니다.</p>
-	<p class="alert">
+	<p class="note">
 		N.form 의 context 요소 안에 다시 N.form 이나 데이터를 바인드하는 컴포넌트(N.grid, N.list 등)의 context 를 지정 했을 때 상위 N.form 의 context 요소에 포함 된 요소들의 id 속성 값과 하위 N.form 의 context 요소에 포함된 요소들의 id 속성 값이 중복 되면 절대 안 됩니다.
 		N.form 의 context 요소들을 중복 되지 않게 나누어 지정 하던 지 data 의 컬럼들을 중복 되지 않게 나누어 바인드 해야 합니다.
 		멀티 폼 바인드에 대한 예제는 [예제] > [<a class="link" href="html/exap/exap0900.html">멀티 폼 바인드</a>] 메뉴 에서 확인 바랍니다. 
 	</p>
-	<p class="alert">
+	<p class="note">
 		신규입력이나 검색 블록 등 데이터를 신규로 생성해야하는 폼 등은 add 메서드를 호출하여 폼 안의 입력요소들을 기본으로 데이터를 생성하고 수정이나 조회 등 데이터를 요소들에
 		바인드 해야 하는 폼은 bind 메서드를 호출 해서 사용 해야 합니다. bind 메서드와 add 메서드는 폼의 용도에 따라 반드시 구분하여 사용되야 하며 폼을 add 한 후 같은 폼 인스턴스로 생성 된 row 에 다시 bind 하면
 		폼이 정상적으로 작동하지 않을 수 있습니다. add 하면서 기본값을 지정 해야 한다면 add 의 인자로 기본값이 될 data를 넣어 주세요.
@@ -22,8 +22,8 @@
 	</p>
 
 	<h3>API DEMO</h3>
-	<p lang="ko_KR" class="alert">데모에는 모든 옵션 및 기능을 포함하고 있지 않습니다. 전체 기능 목록은 데모 바로 아래 있는 기능 문서들을 참고 바랍니다.</p>
-	<p lang="en_US" class="alert">The demo does not include all options and features. For a complete list of features, please refer to the function documentation directly below the demo.</p>
+	<p lang="ko_KR" class="note">데모에는 모든 옵션 및 기능을 포함하고 있지 않습니다. 전체 기능 목록은 데모 바로 아래 있는 기능 문서들을 참고 바랍니다.</p>
+	<p lang="en_US" class="note">The demo does not include all options and features. For a complete list of features, please refer to the function documentation directly below the demo.</p>
 	<div data-page="form" class="apidemo"></div>
 
 	<h3>
@@ -59,7 +59,7 @@
 			<td align="center">-</td>
 			<td>
 				<p>기본 옵션을 object 타입으로 지정 합니다.</p>
-				<p class="alert">jQuery Selector 를 입력하면 입력한 인자가 context 옵션으로 지정 됩니다.</p>
+				<p class="note">jQuery Selector 를 입력하면 입력한 인자가 context 옵션으로 지정 됩니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -107,7 +107,7 @@
 			<td></td>
 			<td>
 				<p>data옵션으로 지정한 데이터 에서 폼에 바인드할 단건 데이터의 row index</p>
-				<p class="alert">컴포넌트의 기본값은 –1 이지만 입력하지 않으면 0으로 세팅되어 첫번째 index에 해당하는 데이터를 바인드 하게 됩니다.</p>
+				<p class="note">컴포넌트의 기본값은 –1 이지만 입력하지 않으면 0으로 세팅되어 첫번째 index에 해당하는 데이터를 바인드 하게 됩니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -138,7 +138,7 @@
 			<td></td>
 			<td>
 				<p>revert 기능을 활성(true), 비활성(false) 시킵니다.</p>
-				<p class="alert">revert 기능을 활성화 하면 최초 바인딩된 데이터를 메모리에 적제 하므로 데이터 바인딩 성능이 저하될 수 있습니다.</p>
+				<p class="note">revert 기능을 활성화 하면 최초 바인딩된 데이터를 메모리에 적제 하므로 데이터 바인딩 성능이 저하될 수 있습니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -148,7 +148,7 @@
 			<td></td>
 			<td>
 				<p>unbind 기능을 활성(true), 비활성(false) 시킵니다.</p>
-				<p class="alert">unbind 기능을 활성화 하면 폼을 초기화하기 전 입력요소들의 데이터를 메모리에 적제 하므로 데이터 바인딩 성능이 저하될 수 있습니다.</p>
+				<p class="note">unbind 기능을 활성화 하면 폼을 초기화하기 전 입력요소들의 데이터를 메모리에 적제 하므로 데이터 바인딩 성능이 저하될 수 있습니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -158,7 +158,7 @@
 			<td></td>
 			<td>
 				<p>add 나 bind 후 같은 폼요소에 다시 bind 해야 할 때 unbind 메서드를 자동으로 호출 해 주어 같은 폼 요소를 재 활용 할 수 있게 해 줍니다.</p>
-				<p class="alert">원칙적으로 add 와 bind 는 용도에 따라 구분 되어 사용 되어 져야 합니다. 이미 데이터가 바인드 된 폼에 unbind 메서드를 호출 하여도 완벽하게 이전 상태로 되 돌릴 수는 없습니다. 부득이한 경우가 아니면 사용을 권장 하지 않습니다.</p>
+				<p class="note">원칙적으로 add 와 bind 는 용도에 따라 구분 되어 사용 되어 져야 합니다. 이미 데이터가 바인드 된 폼에 unbind 메서드를 호출 하여도 완벽하게 이전 상태로 되 돌릴 수는 없습니다. 부득이한 경우가 아니면 사용을 권장 하지 않습니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -266,7 +266,7 @@
 			<td align="center">-</td>
 			<td>
 				반환되는 데이터의 타입을 결정하는 구분자 입니다.
-				<div class="alert">
+				<div class="note">
 					<p>selFlag 인자 값에 따라 다음과 같은 타입의 데이터를 반환 합니다.</p>
 					<ul>
 						<li>입력하지 않았거나 undefined : array[json object] 타입의 데이터를 반환 합니다.</li>
@@ -307,7 +307,7 @@ formInstance.data(true, "col01", "col02", "col03");
  	col03 : ""
 }]
 */</code></pre>
-				<p class="alert">첫번째 인자로 true 를 지정 했을 때만 작동 됩니다.</p>
+				<p class="note">첫번째 인자로 true 를 지정 했을 때만 작동 됩니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -429,7 +429,7 @@ init : function() {
 			<td align="center">-</td>
 			<td>
 				<p>row index 를 지정 하면 컴포넌트에 바인드 되어있는 데이터 리스트에서 지정한 row index 에 해당하는 데이터를 바인드 합니다.</p>
-				<p class="alert">같은 context 에 data 만 바꿔서 재 바인드 했을때 DatePicker 등이 정상 동작 하지 않을 수 있습니다. 이 때는 bind 하기 전에 unbind 를 호출 해 주고 bind 해 주세요.</p>
+				<p class="note">같은 context 에 data 만 바꿔서 재 바인드 했을때 DatePicker 등이 정상 동작 하지 않을 수 있습니다. 이 때는 bind 하기 전에 unbind 를 호출 해 주고 bind 해 주세요.</p>
 			</td>
 		</tr>
 		<tr>
@@ -439,7 +439,7 @@ init : function() {
 			<td align="center">-</td>
 			<td>
 				<p>data인자를 지정하면 컴포넌트에 바인드 된 데이터가 지정한 데이터로 치환되어 바인드 됩니다.</p>
-				<p class="alert">같은 context 에 data 만 바꿔서 재 바인드 했을때 DatePicker 등이 정상 동작 하지 않을 수 있습니다. 이 때는 bind 하기 전에 unbind 를 호출 해 주고 bind 해 주세요.</p>
+				<p class="note">같은 context 에 data 만 바꿔서 재 바인드 했을때 DatePicker 등이 정상 동작 하지 않을 수 있습니다. 이 때는 bind 하기 전에 unbind 를 호출 해 주고 bind 해 주세요.</p>
 			</td>
 		</tr>
 		<tr>
@@ -483,7 +483,7 @@ formInstance.bind(0, data, "col01", "col02", "col03");</code></pre>
 			<td>N.form</td>
 			<td>
 				<p>N.form 의 context로 지정한 블록 요소의 bind 관련 이벤트나 상태, 스타일등을 제거하여  bind 하기 전 상태로 되돌려 줍니다.</p>
-				<p class="alert">폼에 바인드 되어있는 data는 제거 되지 않고 this.options.row 변수 값도 그대로 유지 됩니다.</p>
+				<p class="note">폼에 바인드 되어있는 data는 제거 되지 않고 this.options.row 변수 값도 그대로 유지 됩니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -506,8 +506,8 @@ formInstance.bind(0, data, "col01", "col02", "col03");</code></pre>
 			<td align="center">-</td>
 			<td>
 				새로운 행을 생성할 때 컬럼값들의 기본값을 지정 할 수 있습니다.
-				<p class="alert">인자로 지정된 데이터는 add 호출 시 생성된 기본 데이터를 확장 합니다.</p>
-				<p class="alert">data 인자의 type 이 number 타입이면 다음 옵션인 row 로 인식 됩니다.</p>
+				<p class="note">인자로 지정된 데이터는 add 호출 시 생성된 기본 데이터를 확장 합니다.</p>
+				<p class="note">data 인자의 type 이 number 타입이면 다음 옵션인 row 로 인식 됩니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -540,8 +540,8 @@ formInstance.bind(0, data, "col01", "col02", "col03");</code></pre>
 			<td>value object|N.form</td>
 			<td colspan="2">
 				<p>선택한 컬럼의 원래 값을 가져오거나 입력(수정) 합니다.</p>
-				<p class="alert">val 인자를 입력하지 않으면 선택한 값을 반환하고 입력하면 선택한 키 컬럼의 값을 입력한 값으로 바꿔 줍니다.</p>
-				<p class="alert">값 입력 시 입력한 키 에 해당하는 데이터 없으면 새로운 컬럼 데이터를 생성 합니다.</p>
+				<p class="note">val 인자를 입력하지 않으면 선택한 값을 반환하고 입력하면 선택한 키 컬럼의 값을 입력한 값으로 바꿔 줍니다.</p>
+				<p class="note">값 입력 시 입력한 키 에 해당하는 데이터 없으면 새로운 컬럼 데이터를 생성 합니다.</p>
 			</td>
 		</tr>
 		<tr>
@@ -558,7 +558,7 @@ formInstance.bind(0, data, "col01", "col02", "col03");</code></pre>
 			<td align="center">-</td>
 			<td>
 				<p>저장할 값</p>
-				<p class="alert">key 인자 값과 같은 id 속성값을 가진 HTML 요소가 있다면 null 은 빈 문자열 숫자는 숫자 문자열, Boolean 은 "true" 나 "false" 문자열로 변환 되어 저장 되고 대상 HTML 요소가 없다면 원형 그대로 저장 됩니다.</p>
+				<p class="note">key 인자 값과 같은 id 속성값을 가진 HTML 요소가 있다면 null 은 빈 문자열 숫자는 숫자 문자열, Boolean 은 "true" 나 "false" 문자열로 변환 되어 저장 되고 대상 HTML 요소가 없다면 원형 그대로 저장 됩니다.</p>
 			</td>
 		</tr>
 	</table>
@@ -568,7 +568,7 @@ formInstance.bind(0, data, "col01", "col02", "col03");</code></pre>
 		<span lang="en_US">Examples</span>
 	</h3>
 
-	<p class="alert">예제 데이터</p>
+	<p class="note">예제 데이터</p>
 	<pre class="line-numbers"><code class="language-markup"><xmp>
 var data = [{
     "name": "Dean Stanley",
@@ -579,8 +579,8 @@ var data = [{
 }]</xmp></code></pre>
 
 	<h4 class="notIndex">1. 폼에 데이터 바인드</h4>
-	<p class="alert">폼을 이루는 요소는 TABLE 이든 DIV 든 상관없습니다. 지정한 context 안에 데이터의 키(컬럼)명과 같은 id 속성을 가진 요소가 있다면 해당 요소에 값을 바인드 합니다.</p>
-	<p class="alert">옵션을 오브젝트형이 아닌 string 형으로 context 만 지정하면 array[json object] 의 0 번째 행 데이터를 자동으로 바인드 합니다.<br></p>
+	<p class="note">폼을 이루는 요소는 TABLE 이든 DIV 든 상관없습니다. 지정한 context 안에 데이터의 키(컬럼)명과 같은 id 속성을 가진 요소가 있다면 해당 요소에 값을 바인드 합니다.</p>
+	<p class="note">옵션을 오브젝트형이 아닌 string 형으로 context 만 지정하면 array[json object] 의 0 번째 행 데이터를 자동으로 바인드 합니다.<br></p>
 	<pre class="line-numbers"><code class="language-markup"><xmp>
 <table id="formExample10">
 	<tr>
@@ -674,7 +674,7 @@ var data = [{
 </script></xmp></code></pre>
 
 	<h4 class="notIndex">4. N.select 와 N.form 연동</h4>
-	<p class="alert">N.select 와 N.form을 연동하여 사용할 때는 반드시 N.select 를 먼저 초기화 하고 N.form 을 그다음에 초기화 해야 합니다.</p>
+	<p class="note">N.select 와 N.form을 연동하여 사용할 때는 반드시 N.select 를 먼저 초기화 하고 N.form 을 그다음에 초기화 해야 합니다.</p>
 	<pre class="line-numbers"><code class="language-markup"><xmp>
 <table id="formExample40">
 	<tr>
