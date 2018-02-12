@@ -769,16 +769,16 @@ a.btn_mouseout__, input[type='button'].btn_mouseout__, button.btn_mouseout__ {
 .tab__>ul>li {
 	float: left;
 	margin-right: 1px;
-	padding: 4px;
-	border-top: 1px solid #26A69A;
-	border-left: 1px solid #26A69A;
-	border-right: 1px solid #26A69A;
+	padding: 0.5rem;
+	border-top: 1px solid #80CBC4;
+	border-left: 1px solid #80CBC4;
+	border-right: 1px solid #80CBC4;
 	cursor: pointer;
-	min-width: 80px;
-	border-radius: 3px 3px 0 0;
-	font-size: 12px;
+	min-width: 100px;
+	border-radius: 0 0.5rem 0 0;
 	text-align: center;
-	background-color: #80CBC4;
+	background-color: #B2DFDB;
+	line-height: 3.2rem;
 }
 
 .tab__>ul.tab_scroll__.effect__ {
@@ -819,25 +819,24 @@ a.btn_mouseout__, input[type='button'].btn_mouseout__, button.btn_mouseout__ {
 }
 
 .tab__>ul>li>a {
-	font-weight: bold;
-	color : rgba(0, 0, 0, 0.87);;
+	color: rgba(0, 0, 0, 0.70);
 	text-decoration: none;
-	line-height: 25px;
 }
 
 .tab__>ul>li.tab_active__ {
-	background-color: #26A69A;
+	background-color: #009688;
 	background-image: none;
 }
 
 .tab__>ul>li.tab_active__>a {
 	color : #fff;
-	text-shadow: 1px 1px #005000;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12);
+	font-weight: 500;
 }
 
 .tab__>div {
 	padding: 15px;
-	border: 1px solid #26A69A;
+	border: 1px solid #80CBC4;
 }
 
 .tab__>div.hidden__ > * {}
@@ -1215,7 +1214,7 @@ a.btn_mouseout__, input[type='button'].btn_mouseout__, button.btn_mouseout__ {
 
 .docs__>.docs_tab_context__>ul.docs_tabs__>.docs_tab__ {
 	display: inline-block;
-	margin-right: 0.2rem;
+	margin-right: 2px;
 	padding: 0.8rem;
 	border-top: 1px solid #80CBC4;
 	border-left: 10px solid #26A69A;
@@ -1265,7 +1264,7 @@ a.btn_mouseout__, input[type='button'].btn_mouseout__, button.btn_mouseout__ {
 .docs__>.docs_tab_context__>ul.docs_tab_utils__>li {
 	display: inline-block;
 	float: left;
-	margin-right: 0.2rem;
+	margin-right: 2px;
 	padding: 0.2rem 0;
 	border: 1px solid #80CBC4;
 	border-bottom: none;
