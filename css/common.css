@@ -294,10 +294,9 @@ article.apiDoc .bi {
 }
 
 article.apiDoc .apidemo {
-	border: 1px solid #80CBC4;
 	font-size: 1.4rem;
 	padding: 2rem;
-	box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.24);
+	box-shadow: inset 0px 0px 48px rgba(0, 0, 0, 0.12);
 }
 
 article.apiDoc .apidemo table th, article.apiDoc .apidemo table td, article.apiDoc .apidemo input[type='text'], article.apiDoc .apidemo input[type='number'], article.apiDoc .apidemo input[type='tel'], article.apiDoc .apidemo input[type='password'], article.apiDoc .apidemo select, article.apiDoc .apidemo textarea {
