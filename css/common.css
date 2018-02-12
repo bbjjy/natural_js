@@ -12,7 +12,7 @@ html {
 	-moz-text-size-adjust: none;
 	-ms-text-size-adjust: none;
 	font-size: 62.5%;
-	line-height: 1.4;
+	line-height: 175%;
 }
 
 /**
@@ -22,6 +22,7 @@ body {
 	margin: 0;
 	font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", "dotum", "Segoe UI", sans-serif;
 	font-size: 1.6rem;
+	line-height: 2.8rem;
 	font-weight: 400;
     letter-spacing: .01em;
 	
@@ -225,7 +226,7 @@ article .note {
 	margin: .5em 0;
 	background-color: #E0F2F1;
 	color: rgba(0, 0, 0, 0.54);
-	line-height: 2.6rem;
+	line-height: 2.4rem;
 }
 
 article .note.nomargin {
@@ -301,6 +302,7 @@ article.apiDoc .apidemo {
 
 article.apiDoc .apidemo table th, article.apiDoc .apidemo table td, article.apiDoc .apidemo input[type='text'], article.apiDoc .apidemo input[type='number'], article.apiDoc .apidemo input[type='tel'], article.apiDoc .apidemo input[type='password'], article.apiDoc .apidemo select, article.apiDoc .apidemo textarea {
 	font-size: 1.4rem;
+	line-height: 2.4rem;
 }
 
 article.apiDoc .apidemo table.grid th {
