@@ -153,8 +153,8 @@ body > #docsContainer__.multi__ {
 	padding-top: 4px;
 }
 
-body > #docsContainer__ article {
-	margin: 0 70px 0 70px;
+body > #docsContainer__ > .docs_contents__ > article {
+	margin: 0 70px;
 }
 
 article dl.qna {
