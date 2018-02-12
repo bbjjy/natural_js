@@ -129,13 +129,14 @@ table:last-child {
 }
 table th, table td {
 	border: 1px solid #80CBC4;
-	padding: 1rem;
+	padding: 0.8rem;
 	word-break: break-word;
 	font-size: 1.4rem;
 }
 
 table th, table > tfoot td {
 	background-color: #B2DFDB;
+	font-weight: 500;
 }
 table.form th {
 	background-color: #B2DFDB;
@@ -223,8 +224,12 @@ article .note {
 	padding: 0.5em 0.5em 0.5em 28px;
 	margin: .5em 0;
 	background-color: #E0F2F1;
-	color: rgba(0, 0, 0, 0.70);
-	line-height: 2.4rem;
+	color: rgba(0, 0, 0, 0.54);
+	line-height: 2.6rem;
+}
+
+article .note.nomargin {
+	margin: 0;
 }
 
 article .alert a {
@@ -289,10 +294,10 @@ article.apiDoc .bi {
 }
 
 article.apiDoc .apidemo {
-	border-top: 1px solid #80CBC4;
-	border-bottom: 1px solid #80CBC4;
+	border: 1px solid #80CBC4;
 	font-size: 1.4rem;
-	padding: 3rem;
+	padding: 2rem;
+	box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.24);
 }
 
 article.apiDoc .apidemo table th, article.apiDoc .apidemo table td, article.apiDoc .apidemo input[type='text'], article.apiDoc .apidemo input[type='number'], article.apiDoc .apidemo input[type='tel'], article.apiDoc .apidemo input[type='password'], article.apiDoc .apidemo select, article.apiDoc .apidemo textarea {

@@ -1201,6 +1201,7 @@ a.btn_mouseout__, input[type='button'].btn_mouseout__, button.btn_mouseout__ {
 	position: absolute;
 	left: 0;
 	padding: 0;
+	margin: 0;
 	margin-left: 4px;
 	white-space: nowrap;
 }
@@ -1209,6 +1210,8 @@ a.btn_mouseout__, input[type='button'].btn_mouseout__, button.btn_mouseout__ {
 	position: absolute;
 	right: 0;
 	background-color: #fff;
+	padding: 0;
+	margin: 0;
 }
 
 .docs__>.docs_tab_context__>ul.docs_tabs__>.docs_tab__ {
@@ -1251,8 +1254,12 @@ a.btn_mouseout__, input[type='button'].btn_mouseout__, button.btn_mouseout__ {
 }
 
 .docs__>.docs_tab_context__>ul.docs_tabs__>.docs_tab__.stateless__ {
-	opacity: 0.8;
 	transition: opacity 0.3s cubic-bezier(0.65, -0.01, 0.21, 1.36);
+}
+
+.docs__>.docs_tab_context__>ul.docs_tabs__>.docs_tab__.stateless__ span {
+	color: rgba(0, 0, 0, 0.54);
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.54);
 }
 
 .docs__>.docs_tab_context__>ul.docs_tabs__>.docs_tab__.remove__ {
@@ -1348,7 +1355,11 @@ a.btn_mouseout__, input[type='button'].btn_mouseout__, button.btn_mouseout__ {
 }
 
 .docs__>.docs_tab_context__>ul.docs_tab_utils__>.docs_tab_list_item__ .docs_tab_list__ > .docs_tab__.stateless__ {
-    opacity: 0.6;
+}
+
+.docs__>.docs_tab_context__>ul.docs_tab_utils__>.docs_tab_list_item__ .docs_tab_list__ > .docs_tab__.stateless__ span {
+	color: rgba(0, 0, 0, 0.54);
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.54);
 }
 
 .docs__>.docs_tab_context__>ul.docs_tab_utils__>.docs_tab_list_item__ .docs_tab_list__ > .docs_tab__ > .docs_tab_active_btn__ {
