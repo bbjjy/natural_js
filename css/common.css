@@ -150,11 +150,11 @@ body > #docsContainer__ {
 }
 
 body > #docsContainer__.multi__ {
-	padding-top: 4px;
+	padding-top: 0.8rem;
 }
 
 body > #docsContainer__ > .docs_contents__ > article {
-	margin: 0 60px;
+	margin: 0 6rem;
 }
 
 article dl.qna {
@@ -415,8 +415,8 @@ article .depricated {
 
 article ul.contents {
 	position: absolute;
-	margin-left: -467px;
-	top: 214px;
+	margin-left: -387px;
+	top: 235px;
 	background-color: #fff;
 	padding: 5px 0px 10px 10px;
 	border-radius: 10px 0 0 10px;
