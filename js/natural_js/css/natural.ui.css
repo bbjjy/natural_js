@@ -835,8 +835,7 @@ a.btn_mouseout__, input[type='button'].btn_mouseout__, button.btn_mouseout__ {
 }
 
 .tab__>div {
-	padding: 15px;
-	border: 1px solid #80CBC4;
+	border-top: 1px solid #80CBC4;
 }
 
 .tab__>div.hidden__ > * {}
